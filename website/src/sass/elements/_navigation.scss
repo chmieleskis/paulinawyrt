@@ -19,12 +19,14 @@ header {
     font-size: 5rem;
     text-decoration: none;
     color: $color-link-hover;
+    cursor: pointer;
   };
   .main-navigation {
     display: flex;
     margin-right: 10rem;
-    li {
+    .nav-link {
       font-size: 1.5rem;
+      text-decoration: none;
       text-transform: uppercase;
       color: $color-link;
       margin: 0 2rem;
