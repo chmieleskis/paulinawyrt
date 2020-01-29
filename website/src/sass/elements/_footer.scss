@@ -1,0 +1,40 @@
+footer {
+  width: 100vw;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  position: relative;
+  margin-top: 3rem;
+  &:before {
+    width: 70%;
+    content: '';
+    position: absolute;
+    border-top: 0.5px solid $color-link;
+    top: 0;
+    left: 15%;
+  }
+  .icon {
+    font-size: 3rem;
+    margin: 0 1rem;
+    color: $color-link;
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+  .created-by {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: $color-link;
+    a {
+      color: $color-link;
+      text-decoration: none;
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
+  }
+}
