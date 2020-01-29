@@ -1,0 +1,27 @@
+.about {
+  width: 100vw;
+  height: calc(100vh - 30rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .photo {
+    width: 20%;
+    height: 70%;
+    background-image: url("../../assets/magda.jpeg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5rem;
+  };
+  .description {
+    width: 30%;
+    height: 70%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      margin-bottom: 2rem;
+    };
+  };
+};

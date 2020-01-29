@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Navigation from "./components/navigation";
 import Portfolio from "./components/portfolio";
+import AboutMe from "./components/aboutMe";
 import Footer from "./components/footer";
 import {
     // withRouter,
@@ -15,11 +16,12 @@ class App extends Component {
     render() {
         return (
             <>
-                <Navigation/>
                 <HashRouter>
-                    <Route exact path="/" component={Portfolio}/>
+                    <Navigation/>
+                    <Route path="/" component={Portfolio}/>
+                    <Route path="/paulina" component={AboutMe}/>
+                    <Footer/>
                 </HashRouter>
-                <Footer/>
             </>
     )
     }
