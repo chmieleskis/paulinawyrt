@@ -1,0 +1,24 @@
+//Fonts
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i,800,800i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap');
+
+//Icons
+
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+//Generic
+
+@import "generic/reset";
+
+
+//Settings
+
+@import "settings/colors";
+
+//Elements
+
+@import "elements/base";
+@import "elements/navigation";
+@import "elements/footer";
