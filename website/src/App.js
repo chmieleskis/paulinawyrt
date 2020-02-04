@@ -3,6 +3,7 @@ import Navigation from "./components/navigation";
 import Portfolio from "./components/portfolio";
 import AboutMe from "./components/aboutMe";
 import Footer from "./components/footer";
+import Contact from "./components/contact";
 import {
     // withRouter,
     HashRouter,
@@ -20,6 +21,7 @@ class App extends Component {
                     <Navigation/>
                     <Route path="/" component={Portfolio}/>
                     <Route path="/paulina" component={AboutMe}/>
+                    <Route path="/contact" component={Contact}/>
                     <Footer/>
                 </HashRouter>
             </>
