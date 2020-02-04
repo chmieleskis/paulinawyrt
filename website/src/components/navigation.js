@@ -5,7 +5,7 @@ class Navigation extends Component {
     render() {
         return (
             <header>
-                <p className='logo'>Paulina<br/>Wyrt</p>
+                <Link className='logo' to='/'>Paulina<br/>Wyrt</Link>
                 <ul className='main-navigation'>
                     <li><Link className='nav-link' to='/'>Portfolio</Link></li>
                     <li><Link className='nav-link' to='/paulina'>O mnie</Link></li>
