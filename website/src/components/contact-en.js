@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import axios from "axios";
 
-class Contact extends Component {
+class ContactEn extends Component {
     state = {
         name: '',
         email: '',
@@ -22,13 +22,13 @@ class Contact extends Component {
         let messageError = '';
 
         if (this.state.name.length === 0) {
-            nameError = 'Podaj swoje imię!'
+            nameError = 'Enter your name, please!'
         }
         if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(this.state.email)) {
-            emailError = 'Podany email jest nieprawidłowy!'
+            emailError = 'Invalid email address!'
         }
         if (this.state.message.length === 0) {
-            messageError = 'Wiadomość jest zbyt krótka!'
+            messageError = 'Enter your message, please!'
         }
         if (nameError || emailError || messageError) {
             this.setState({
@@ -94,12 +94,12 @@ class Contact extends Component {
         return (
             <section className='contact'>
                 <form>
-                    <h1>Napisz do mnie!</h1>
+                    <h1>Write to me!</h1>
                     <div>
                         <input
                             className='name-input'
                             type="text"
-                            placeholder='Imię'
+                            placeholder='Name'
                             name='name'
                             value={this.state.name}
                             onChange={this.handleChange}
@@ -119,7 +119,7 @@ class Contact extends Component {
                     </div>
                     <textarea
                         className='message-input'
-                        placeholder='Wiadomość'
+                        placeholder='Message'
                         name="message"
                         value={this.state.message}
                         onChange={this.handleChange}
@@ -130,7 +130,7 @@ class Contact extends Component {
                     <input
                         className="submit-button"
                         type="submit"
-                        value='Wyślij'
+                        value='Send'
                         onClick={this.handleSubmit}
                     />
                 </form>
@@ -140,4 +140,4 @@ class Contact extends Component {
 
 }
 
-export default Contact
+export default ContactEn
