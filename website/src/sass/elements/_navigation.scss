@@ -23,7 +23,7 @@ header {
       font-family: $beth-ellen;
       font-size: 5rem;
       text-decoration: none;
-      color: rgba(150, 217, 161, 1);
+      color: $color-details;
       cursor: pointer;
     };
     .animation-motorbike {
@@ -41,6 +41,7 @@ header {
     margin-right: 10rem;
     .main-navigation {
       display: flex;
+      margin-right: 2rem;
       .nav-link {
         font-size: 1.5rem;
         text-decoration: none;
