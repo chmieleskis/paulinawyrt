@@ -42,9 +42,9 @@ class App extends Component {
                 <>
                     <HashRouter>
                         <Navigation polish={this.handlePolish} english={this.handleEnglish}/>
-                        <Route path="/" component={Portfolio} />
-                        <Route path="/paulina" component={AboutMe}/>
-                        <Route path="/contact" component={Contact}/>
+                        <Route exact path="/" component={Portfolio} />
+                        <Route exact path="/paulina" component={AboutMe}/>
+                        <Route exact path="/contact" component={Contact}/>
                         <Footer/>
                     </HashRouter>
                 </>
@@ -54,9 +54,9 @@ class App extends Component {
                 <>
                     <HashRouter>
                         <NavigationEn polish={this.handlePolish} english={this.handleEnglish}/>
-                        <Route path="/" component={PortfolioEn}/>
-                        <Route path="/paulina" component={AboutMeEn}/>
-                        <Route path="/contact" component={ContactEn}/>
+                        <Route exact path="/" component={PortfolioEn}/>
+                        <Route exact path="/paulina" component={AboutMeEn}/>
+                        <Route exact path="/contact" component={ContactEn}/>
                         <Footer/>
                     </HashRouter>
                 </>
