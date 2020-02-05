@@ -13,14 +13,28 @@ header {
     bottom: 0;
     left: 20%;
   }
-  .logo {
-    margin-left: 10rem;
-    font-family: $beth-ellen;
-    font-size: 5rem;
-    text-decoration: none;
-    color: $color-link-hover;
-    cursor: pointer;
-  };
+  .left-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    .logo {
+      margin-left: 10rem;
+      font-family: $beth-ellen;
+      font-size: 5rem;
+      text-decoration: none;
+      color: rgba(150, 217, 161, 1);
+      cursor: pointer;
+    };
+    .animation-motorbike {
+      background-image: url("../../assets/plaza.gif");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 30%;
+    };
+  }
   .right-container {
     display: flex;
     align-items: center;
@@ -39,7 +53,6 @@ header {
         }
       }
     }
-
     .flags {
       .nav-link {
         width: 100%;
