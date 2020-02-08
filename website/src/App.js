@@ -4,10 +4,6 @@ import Portfolio from "./components/portfolio";
 import AboutMe from "./components/aboutMe";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
-import NavigationEn from "./components/navigation-en";
-import PortfolioEn from "./components/portfolioEn";
-import AboutMeEn from "./components/aboutMeEn";
-import ContactEn from "./components/contact-en";
 import {
     // withRouter,
     HashRouter,
@@ -25,43 +21,32 @@ class App extends Component {
     handlePolish = () => {
         this.setState({
            language: 'pl'
-        })
-        console.log(this.state.language)
+        });
+
+        localStorage.setItem('language', this.state.language)
     };
 
     handleEnglish = () => {
         this.setState({
             language: 'en'
-        })
-        console.log(this.state.language)
+        });
+
+        localStorage.setItem('language', this.state.language)
     };
 
     render() {
-        if (this.state.language === 'pl') {
-            return (
-                <>
-                    <HashRouter>
-                        <Navigation polish={this.handlePolish} english={this.handleEnglish}/>
-                        <Route exact path="/" component={Portfolio} />
-                        <Route exact path="/paulina" component={AboutMe}/>
-                        <Route exact path="/contact" component={Contact}/>
-                        <Footer/>
-                    </HashRouter>
-                </>
-            )
-        } else {
-            return (
-                <>
-                    <HashRouter>
-                        <NavigationEn polish={this.handlePolish} english={this.handleEnglish}/>
-                        <Route exact path="/" component={PortfolioEn}/>
-                        <Route exact path="/paulina" component={AboutMeEn}/>
-                        <Route exact path="/contact" component={ContactEn}/>
-                        <Footer/>
-                    </HashRouter>
-                </>
-            )
-        }
+        return (
+            <>
+                <HashRouter>
+                    <Navigation polish={this.handlePolish} english={this.handleEnglish} language={this.state.language}/>
+                    <Route exact path="/" component={Portfolio}/>
+                    <Route exact path="/paulina" component={AboutMe}/>
+                    <Route exact path="/contact" component={Contact}/>
+                    <Footer/>
+                </HashRouter>
+            </>
+        )
+
     }
 }
 
