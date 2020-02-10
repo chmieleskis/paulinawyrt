@@ -4,6 +4,7 @@ import Portfolio from "./components/portfolio";
 import AboutMe from "./components/aboutMe";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
+import ContactEn from "./components/contact-en";
 import {
     // withRouter,
     HashRouter,
@@ -41,7 +42,7 @@ class App extends Component {
                     <Navigation polish={this.handlePolish} english={this.handleEnglish} language={this.state.language}/>
                     <Route exact path="/" component={Portfolio}/>
                     <Route exact path="/paulina" component={AboutMe}/>
-                    <Route exact path="/contact" component={Contact}/>
+                    {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
                     <Footer/>
                 </HashRouter>
             </>

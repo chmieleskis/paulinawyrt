@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import axios from "axios";
+// import axios from "axios";
 
 class Contact extends Component {
     state = {
@@ -9,8 +9,12 @@ class Contact extends Component {
         nameError: '',
         emailError: '',
         messageError: '',
-        emailSend: false
+        emailSend: false,
     };
+
+    handleCopy = (e) => {
+        navigator.clipboard.writeText('wyrtpaulina@gmail.com')
+    }
 
     handleChange = e => {
         this.setState( {[e.target.name]: e.target.value})
@@ -43,11 +47,11 @@ class Contact extends Component {
         e.preventDefault();
         const isValid = this.validate();
 
-        const data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        };
+        // const data = {
+        //     name: this.state.name,
+        //     email: this.state.email,
+        //     message: this.state.message
+        // };
 
         // axios.post('API_URI', data)
         //     .then(res => {
@@ -93,8 +97,15 @@ class Contact extends Component {
     render() {
         return (
             <section className='contact'>
+                <div className="photo"/>
                 <form>
-                    <h1>Napisz do mnie!</h1>
+                    <p className='contact-text'>
+                        Jeśli chcesz ze mną współpracować lub po prostu się przywitać, skorzystaj<br/>z formularza kontaktowego poniżej lub napisz do mnie na adres:<br/>
+                        <div
+                            className="email-address" onClick={this.handleCopy}>wyrtpaulina@gmail.com
+                            <span className="tooltip tooltip-pl">Kliknij aby skopiować</span>
+                        </div>
+                    </p>
                     <div>
                         <input
                             className='name-input'

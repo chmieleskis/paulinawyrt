@@ -1,27 +1,27 @@
 .about {
   width: 100vw;
-  height: calc(100vh - 25rem);
   display: flex;
   justify-content: center;
-  align-items: center;
   .photo {
-    width: 20%;
-    height: 70%;
-    background-image: url("../../assets/magda.jpeg");
+    width: 50rem;
+    height: 50rem;
+    background-image: url("../../assets/biurko.png");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-right: 5rem;
+    margin: 10rem 5rem 0 0;
+    border: .5px solid $color-link-hover;
+    border-radius: 50%;
   };
   .description {
-    width: 30%;
-    height: 70%;
+    width: 35%;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10rem 0;
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     };
   };
 };
