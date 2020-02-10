@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import axios from "axios";
+// import axios from "axios";
 
 class ContactEn extends Component {
     state = {
@@ -9,8 +9,20 @@ class ContactEn extends Component {
         nameError: '',
         emailError: '',
         messageError: '',
-        emailSend: false
+        emailSend: false,
     };
+
+    handleCopy = () => {
+        navigator.clipboard.writeText('wyrtpaulina@gmail.com')
+    };
+
+    // span.addEventListener("copy", function(event) {
+    //     event.preventDefault();
+    //     if (event.clipboardData) {
+    //         event.clipboardData.setData("text/plain", span.textContent);
+    //         console.log(event.clipboardData.getData("text"))
+    //     }
+    // });
 
     handleChange = e => {
         this.setState( {[e.target.name]: e.target.value})
@@ -43,11 +55,11 @@ class ContactEn extends Component {
         e.preventDefault();
         const isValid = this.validate();
 
-        const data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        };
+        // const data = {
+        //     name: this.state.name,
+        //     email: this.state.email,
+        //     message: this.state.message
+        // };
 
         // axios.post('API_URI', data)
         //     .then(res => {
@@ -93,8 +105,15 @@ class ContactEn extends Component {
     render() {
         return (
             <section className='contact'>
+                <div className="photo"/>
                 <form>
-                    <h1>Write to me!</h1>
+                    <p className='contact-text'>
+                        If You would like to work with me or just to say hi,<br/>please use the contact form below or mail me at:<br/>
+                        <div
+                            className="email-address" onClick={this.handleCopy}>wyrtpaulina@gmail.com
+                            <span className="tooltip">Click to copy</span>
+                        </div>
+                    </p>
                     <div>
                         <input
                             className='name-input'
