@@ -43,7 +43,7 @@ class App extends Component {
                     <Route exact path="/" component={Portfolio}/>
                     <Route exact path="/paulina" component={AboutMe}/>
                     {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
-                    <Footer/>
+                    <Footer language={this.state.language}/>
                 </HashRouter>
             </>
         )

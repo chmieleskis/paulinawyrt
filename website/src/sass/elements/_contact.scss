@@ -39,26 +39,13 @@
           }
         }
         .tooltip {
-          visibility: hidden;
-          background-color: $color-input-background;
-          color: $color-link-hover;
-          font-family: $raleway;
-          font-size: 1.2rem;
-          font-weight: 300;
-          text-align: center;
-          padding: .5rem 1rem;
-          border-radius: 6px;
-          position: absolute;
-          z-index: 1;
+          @include tooltip
           top: 2.5rem;
           left: 54%;
-          margin-left: -60px;
-          opacity: 0;
-          transition: opacity 0.3s;
           &:after {
-            content: " ";
+            content: "";
             position: absolute;
-            bottom: 100%;  /* At the top of the tooltip */
+            bottom: 100%;
             left: 50%;
             margin-left: -5px;
             border-width: 5px;
@@ -70,6 +57,13 @@
           left: 49%;
         }
       }
+    }
+    .success {
+      font-family: $garamond;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: green;
+      margin-top: 3rem;
     }
     div {
       width: 100%;
@@ -120,6 +114,9 @@
         margin: 0 3% 0 10%;
       };
     };
+    .message-error {
+      margin-left: 10%;
+    }
   }
 }
 
