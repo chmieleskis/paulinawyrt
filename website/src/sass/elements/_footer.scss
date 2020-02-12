@@ -40,32 +40,18 @@ footer {
         }
       }
       .tooltip {
+        @include tooltip;
         width: 12rem;
-        visibility: hidden;
-        background-color: $color-input-background;
-        color: $color-link-hover;
-        font-family: $raleway;
-        font-size: 1.2rem;
-        font-weight: 300;
-        text-transform: none;
-        text-align: center;
-        padding: .5rem 1rem;
-        border-radius: 6px;
-        position: absolute;
-        z-index: 1;
         top: -5px;
         left: 145%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
         &:after {
-          content: " ";
-          position: absolute;
-          top: 50%;
-          right: 100%; /* To the left of the tooltip */
-          margin-top: -5px;
-          border-width: 5px;
-          border-style: solid;
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
           border-color: transparent $color-input-background transparent transparent;
         }
       }
