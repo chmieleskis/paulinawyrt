@@ -23,16 +23,12 @@ class App extends Component {
         this.setState({
            language: 'pl'
         });
-
-        localStorage.setItem('language', this.state.language)
     };
 
     handleEnglish = () => {
         this.setState({
             language: 'en'
         });
-
-        localStorage.setItem('language', this.state.language)
     };
 
     render() {
@@ -40,8 +36,8 @@ class App extends Component {
             <>
                 <HashRouter>
                     <Navigation polish={this.handlePolish} english={this.handleEnglish} language={this.state.language}/>
-                    <Route exact path="/" component={Portfolio}/>
-                    <Route exact path="/paulina" component={AboutMe}/>
+                    <Route exact path="/" render={(routeProps) => (<Portfolio {...routeProps} language={this.state.language}/>)}/>
+                    <Route exact path="/paulina" render={(routeProps) => (<AboutMe {...routeProps} language={this.state.language}/>)}/>
                     {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
                     <Footer language={this.state.language}/>
                 </HashRouter>
