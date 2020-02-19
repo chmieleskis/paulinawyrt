@@ -1,22 +1,26 @@
 .portfolio {
   width: 100vw;
-  height: calc(100vh - 25rem);
+  min-height: calc(100vh - 25rem);
   box-sizing: border-box;
   padding: 1% 11.5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  overflow-y: auto;
-  &::-webkit-scrollbar {
-    width: 1.5rem;
-  }
-  &::-webkit-scrollbar-track {
-    border-radius: .5rem;
-    -webkit-box-shadow: inset 0 0 6px $color-details
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: $color-details;
-    border-radius: .5rem;
+  .categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: .5rem 0 1rem 0;
+    color: $color-link;
+    li {
+      font-size: 1.5rem;
+      color: $color-link;
+      margin-right: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
   }
   .miniature {
     width: 23vw;
@@ -24,7 +28,7 @@
     background-image: url("../../assets/magda.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 1rem 0;
+    margin: 1rem 0 3rem 0;
     cursor: pointer;
     text-decoration: none;
     .mini-shade {
@@ -37,7 +41,6 @@
       p {
         line-height: 33.5vh;
         width: 100%;
-        height: 100%;
         font-family: $garamond;
         font-size: 2rem;
         font-weight: 700;
