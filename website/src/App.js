@@ -5,6 +5,8 @@ import AboutMe from "./components/aboutMe";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
 import ContactEn from "./components/contact-en";
+import GalleryLichoTwo from "./components/galleryLichoTwo";
+import GalleryEnglishWords from "./components/galleryEnglishWords";
 import {
     // withRouter,
     HashRouter,
@@ -39,6 +41,8 @@ class App extends Component {
                     <Route exact path="/" render={(routeProps) => (<Portfolio {...routeProps} language={this.state.language}/>)}/>
                     <Route exact path="/paulina" render={(routeProps) => (<AboutMe {...routeProps} language={this.state.language}/>)}/>
                     {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
+                    <Route exact path="/portfolio/gallery-licho-two" render={(routeProps) => (<GalleryLichoTwo {...routeProps} language={this.state.language}/>)}/>
+                    <Route exact path="/portfolio/gallery-english-words" render={(routeProps) => (<GalleryEnglishWords {...routeProps} language={this.state.language}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>

@@ -9,21 +9,21 @@
   box-sizing: border-box;
   cursor: text;
   &:hover {
-    border: 0.5px solid $color-link-hover;
+    border: 0.5px solid $color-link;
   };
   &:focus {
-    border: 0.5px solid $color-link-hover;
-  }
-}
+    border: 0.5px solid $color-link;
+  };
+};
 
 @mixin tooltip {
   text-transform: none;
   visibility: hidden;
   background-color: $color-input-background;
-  color: $color-link-hover;
+  color: $color-link;
   font-family: $raleway;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   padding: .5rem 1rem;
   border-radius: 6px;
@@ -32,4 +32,11 @@
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
-}
+};
+
+@mixin award {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  margin-top: 1.5rem;
+};
