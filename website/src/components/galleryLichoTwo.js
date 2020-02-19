@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import bookCover from "../assets/Licho/book-cover.png";
 import bookCoverGif from "../assets/Licho/book-cover.gif";
 import onTheRoad from "../assets/Licho/onTheRoad.png";
@@ -22,6 +23,7 @@ class GalleryLicho extends Component {
                 </div>
                 <div className="gallery-descriptions">
                     {this.props.language === 'pl' ? <p className='title'>Małe licho i anioł<br/>z kamienia</p> : <p className='title'>Little Devil And The Stone Angel</p>}
+                    {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.books} to={'/'}>książki</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.books} to={'/'}>books</Link></p>}
                     {this.props.language === 'pl' ? <p className="author">Autor: Marta Kisiel</p> : <p className="author">Written by Marta Kisiel</p>}
                     {this.props.language === 'pl' ? <p className="illustrations">Ilustracje: Paulina Wyrt</p> : <p className="illustrations">Illustrated by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Wilga</p> : <p className="publishing-house">Wilga Publishing House</p>}

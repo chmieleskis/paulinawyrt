@@ -30,6 +30,16 @@
       font-weight: 600;
       text-transform: uppercase;
     }
+    .category {
+      .category-link {
+        text-decoration: none;
+        cursor: pointer;
+        color: $color-email-hover;
+        &:hover {
+          color: $color-link-hover;
+        }
+      }
+    }
     //GalleryLichoTwo
     .ibby {
       @include award;

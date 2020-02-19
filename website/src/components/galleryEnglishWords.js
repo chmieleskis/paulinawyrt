@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import bookCover from "../assets/English-words/book-cover.png";
 import centerfold from "../assets/English-words/centerfold.png";
 import centerfoldWords from "../assets/English-words/centerfold-words.png";
@@ -22,6 +23,7 @@ class GalleryEnglishWords extends Component {
                 </div>
                 <div className="gallery-descriptions">
                     {this.props.language === 'pl' ? <p className='title'>Na tropie angielskich słówek</p> : <p className='title'>On The Trail of English Words</p>}
+                    {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.books} to={'/'}>książki</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.books} to={'/'}>books</Link></p>}
                     {this.props.language === 'pl' ? <p className="author">Praca zbiorowa</p> : <p className="author">Group work</p>}
                     {this.props.language === 'pl' ? <p className="illustrations">Okładka i rozkładówka: Paulina Wyrt</p> : <p className="illustrations">Cover and centerfold by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Edgard<br/>seria Kapitan Nauka</p> : <p className="publishing-house">Edgard Publishing House<br/>Captain Science series</p>}

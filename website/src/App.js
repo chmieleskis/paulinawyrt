@@ -18,7 +18,8 @@ import {
 
 class App extends Component {
     state = {
-        language: 'en'
+        language: 'en',
+        category: ''
     };
 
     handlePolish = () => {
@@ -33,16 +34,36 @@ class App extends Component {
         });
     };
 
+    handleAll = () => {
+        this.setState({
+            category: ''
+        })
+    };
+
+    handleBooks = () => {
+        this.setState({
+            category: 'books'
+        })
+    };
+
     render() {
         return (
             <>
                 <HashRouter>
                     <Navigation polish={this.handlePolish} english={this.handleEnglish} language={this.state.language}/>
-                    <Route exact path="/" render={(routeProps) => (<Portfolio {...routeProps} language={this.state.language}/>)}/>
+                    <Route exact path="/" render={(routeProps) => (<Portfolio {...routeProps}
+                                                                              language={this.state.language}
+                                                                              category={this.state.category}
+                                                                              all={this.handleAll}
+                                                                              books={this.handleBooks}/>)}/>
                     <Route exact path="/paulina" render={(routeProps) => (<AboutMe {...routeProps} language={this.state.language}/>)}/>
                     {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
-                    <Route exact path="/portfolio/gallery-licho-two" render={(routeProps) => (<GalleryLichoTwo {...routeProps} language={this.state.language}/>)}/>
-                    <Route exact path="/portfolio/gallery-english-words" render={(routeProps) => (<GalleryEnglishWords {...routeProps} language={this.state.language}/>)}/>
+                    <Route exact path="/portfolio/gallery-licho-two" render={(routeProps) => (<GalleryLichoTwo {...routeProps}
+                                                                                                               language={this.state.language}
+                                                                                                               books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-english-words" render={(routeProps) => (<GalleryEnglishWords {...routeProps}
+                                                                                                                       language={this.state.language}
+                                                                                                                       books={this.handleBooks}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>
