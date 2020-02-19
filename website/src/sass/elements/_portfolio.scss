@@ -2,7 +2,7 @@
   width: 100vw;
   height: calc(100vh - 25rem);
   box-sizing: border-box;
-  padding: 1% 0;
+  padding: 1% 11.5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -26,7 +26,6 @@
     background-repeat: no-repeat;
     margin: 1rem 0;
     cursor: pointer;
-    border: 0.5px solid $color-link-hover;
     text-decoration: none;
     .mini-shade {
       width: 100%;
@@ -36,17 +35,15 @@
         background-color: rgba(255, 255, 255, 0.5);
       }
       p {
-        display: block;
-        box-sizing: border-box;
+        line-height: 33.5vh;
         width: 100%;
         height: 100%;
         font-family: $garamond;
         font-size: 2rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: $color-link-hover;
+        color: rgba(69, 61, 60, 1);
         opacity: 0;
-        padding-top: calc(40% - 1rem);
         text-align: center;
         &:hover {
           opacity: 1;
@@ -54,8 +51,11 @@
       }
     }
   }
-  .gallery-food {
-    background-image: url("../../assets/gallery-food/8-kawior-33.png");
+  .gallery-licho-two {
+    background-image: url("../../assets/Licho/cover.png");
+  }
+  .gallery-english-words {
+    background-image: url("../../assets/English-words/cover.png");
   }
 }
 
