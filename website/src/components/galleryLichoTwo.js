@@ -1,5 +1,8 @@
-import React, {Component} from "react";
+import React, {Component, useState, useCallback} from "react";
 import {Link} from "react-router-dom";
+import Gallery from "react-photo-gallery";
+import Carousel, {Modal, ModalGateway} from "react-images";
+
 import bookCover from "../assets/Licho/book-cover.png";
 import bookCoverGif from "../assets/Licho/book-cover.gif";
 import onTheRoad from "../assets/Licho/onTheRoad.png";
@@ -8,19 +11,84 @@ import auntOdaGif from "../assets/Licho/auntOda.gif";
 import bozek from "../assets/Licho/bozek.png";
 import odaChopsWood from "../assets/Licho/odaChopsWood.png";
 
+const images = [
+    {
+        src: bookCover,
+        height: 920,
+        width: 636
+    },
+    {
+        src: bookCoverGif,
+        height: 581,
+        width: 800
+    },
+    {
+        src: onTheRoad,
+        height: 920,
+        width: 650
+    },
+    {
+        src: auntOda,
+        height: 920,
+        width: 622
+    },
+    {
+        src: auntOdaGif,
+        height: 720,
+        width: 596
+    },
+    {
+        src: bozek,
+        height: 920,
+        width: 622
+    },
+    {
+        src: odaChopsWood,
+        height: 920,
+        width: 622
+    },
+];
+
+function LichoAndAngel() {
+    const openLightbox = useCallback((event, {photo, index}) => {
+        setCurrentImage(index);
+        setViewerIsOpen(true);
+    }, []);
+
+    const closeLightbox = () => {
+        setCurrentImage(0);
+        setViewerIsOpen(false);
+    };
+
+    const [currentImage, setCurrentImage] = useState(0);
+    const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+    return (
+        <div className="gallery-images">
+            <Gallery photos={images} direction='column' onClick={openLightbox}/>
+            <ModalGateway>
+                {viewerIsOpen ? (
+                    <Modal onClose={closeLightbox}>
+                        <Carousel
+                            currentIndex={currentImage}
+                            views={images.map(x => ({
+                                ...x,
+                                srcset: x.srcSet,
+                                caption: x.title
+                            }))}
+                        />
+                    </Modal>
+                ) : null}
+            </ModalGateway>
+        </div>
+    )
+};
+
 class GalleryLicho extends Component {
     render() {
         return (
             <section className="image-gallery gallery-licho">
-                <div className="gallery-images">
-                    <img src={bookCover} alt="book cover"/>
-                    <img src={bookCoverGif} alt="book cover making of"/>
-                    <img src={onTheRoad} alt="on the road"/>
-                    <img src={auntOda} alt="aunt Oda"/>
-                    <img src={auntOdaGif} alt="aunt Oda making of"/>
-                    <img src={bozek} alt="Bozek look out the window"/>
-                    <img src={odaChopsWood} alt="aunt Oda chops wood"/>
-                </div>
+                <LichoAndAngel/>
                 <div className="gallery-descriptions">
                     {this.props.language === 'pl' ? <p className='title'>Małe licho i anioł<br/>z kamienia</p> : <p className='title'>Little Devil And The Stone Angel</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.books} to={'/'}>książki</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.books} to={'/'}>books</Link></p>}
