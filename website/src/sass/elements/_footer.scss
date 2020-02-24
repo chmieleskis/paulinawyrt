@@ -6,7 +6,7 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-  //margin-top: 1rem;
+  margin-top: 3rem;
   &:before {
     width: 70%;
     content: '';
@@ -15,14 +15,16 @@ footer {
     top: 0;
     left: 15%;
   }
+  .icons {
   .icon {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0 1rem;
     color: $color-link;
     &:hover {
-      color: $color-link-hover;
+      color: $color-email-hover;
     }
   }
+    }
   .created-by {
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -34,6 +36,7 @@ footer {
       display: inline-block;
       &:hover {
         color: $color-email-hover;
+        font-weight: 600;
         .tooltip {
           visibility: visible;
           opacity: 1;

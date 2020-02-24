@@ -1,77 +1,89 @@
-header {
+.fixed {
+  z-index: 1;
+  position: fixed;
+  top:0;
+  left: 0;
   width: 100%;
   height: 15rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  &:before {
-    content: '';
-    width: 60%;
-    position: absolute;
-    border: .5px solid $color-link;
-    bottom: 0;
-    left: 20%;
-  }
-  .left-container {
-    height: 100%;
-    width: 50%;
+  background-color: #ffffff;
+  header {
+    width: 100%;
+    height: 15rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    .logo {
-      margin-left: 10rem;
-      font-family: $beth-ellen;
-      font-size: 5rem;
-      text-decoration: none;
-      color: $color-details;
-      cursor: pointer;
-    };
-    .animation-motorbike {
-      background-image: url("../../assets/plaza.gif");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
+    position: relative;
+    &:before {
+      content: '';
+      width: 60%;
+      position: absolute;
+      border: .5px solid $color-link;
+      bottom: 0;
+      left: 20%;
+    }
+    .left-container {
       height: 100%;
-      width: 30%;
-    };
-  }
-  .right-container {
-    display: flex;
-    align-items: center;
-    margin-right: 10rem;
-    .main-navigation {
+      width: 50%;
       display: flex;
-      margin-right: 2rem;
-      .nav-link {
-        font-size: 1.5rem;
+      align-items: center;
+      .logo {
+        margin-left: 10rem;
+        font-family: $beth-ellen;
+        font-size: 5rem;
         text-decoration: none;
-        text-transform: uppercase;
-        color: $color-link;
-        margin: 0 2rem;
+        color: $color-details;
         cursor: pointer;
-        &:hover {
-          color: $color-link-hover;
+      };
+      .animation-motorbike {
+        background-image: url("../../assets/plaza.gif");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 30%;
+      };
+    }
+    .right-container {
+      display: flex;
+      align-items: center;
+      margin-right: 10rem;
+      .main-navigation {
+        display: flex;
+        margin-right: 2rem;
+        .nav-link {
+          font-size: 1.5rem;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $color-link;
+          margin: 0 2rem;
+          cursor: pointer;
+          &:hover {
+            color: $color-email-hover;
+          }
+        }
+        .active {
+          color: $color-email-hover;
         }
       }
-    }
-    .flags {
-        .flag {
-          width: 100%;
-          height: 100%;
-          cursor: pointer;
-          display: inline-block;
-          width: 3rem;
-          height: 3rem;
-          background-position: center;
-          border-radius: 50%;
-          border: 0.5px solid $color-link-hover;
+      .flags {
+          .flag {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            background-position: center;
+            border-radius: 50%;
+            border: 0.5px solid $color-link;
+          };
+        .pl {
+          background-image: url("../../assets/poland-flag-square-icon-32.png");
+          margin-right: 1rem;
         };
-      .pl {
-        background-image: url("../../assets/poland-flag-square-icon-32.png");
-        margin-right: 1rem;
-      };
-      .uk {
-        background-image: url("../../assets/united-kingdom-flag-square-icon-32.png");
+        .uk {
+          background-image: url("../../assets/united-kingdom-flag-square-icon-32.png");
+        };
       };
     };
   };

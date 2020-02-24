@@ -1,17 +1,13 @@
 .image-gallery {
+  margin-top: 15rem;
   width: 100%;
   display: flex;
   justify-content: center;
   .gallery-images {
-    width: 30%;
+    width: 25%;
     margin-top: 3rem;
     img {
-      width: 100%;
-      padding-bottom: 2rem;
       cursor: pointer;
-    }
-    img:last-of-type {
-      padding-bottom: 3rem;
     }
   }
   .gallery-descriptions {
@@ -36,7 +32,7 @@
         cursor: pointer;
         color: $color-email-hover;
         &:hover {
-          color: $color-link-hover;
+          color: $color-link;
         }
       }
     }

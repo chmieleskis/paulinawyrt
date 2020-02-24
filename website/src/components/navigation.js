@@ -1,26 +1,30 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 class Navigation extends Component {
+
+
     render() {
         return (
-            <header>
-                <div className='left-container'>
-                    <Link className='logo' to='/'>Paulina<br/>Wyrt</Link>
-                    <div className="animation-motorbike"/>
-                </div>
-                <div className="right-container">
-                    <ul className='main-navigation'>
-                        <li><Link className='nav-link' to='/'>Portfolio</Link></li>
-                        {this.props.language === "pl" ? <li><Link className='nav-link' to='/paulina'>O mnie</Link></li> : <li><Link className='nav-link' to='/paulina'>About Me</Link></li>}
-                        {this.props.language === "pl" ? <li><Link className='nav-link' to='/contact'>Kontakt</Link></li> :<li><Link className='nav-link' to='/contact'>Contact</Link></li>}
-                    </ul>
-                    <div className="flags">
-                        <div className="flag pl" onClick={this.props.polish}/>
-                        <div className="flag uk" onClick={this.props.english}/>
+            <div className="fixed">
+                <header>
+                    <div className='left-container'>
+                        <NavLink className='logo' to='/' onClick={this.props.all}>Paulina<br/>Wyrt</NavLink>
+                        <div className="animation-motorbike"/>
                     </div>
-                </div>
-            </header>
+                    <div className="right-container">
+                        <ul className='main-navigation'>
+                            <li><NavLink className='nav-link' exact to='/' activeClassName='active' onClick={this.props.all}>Portfolio</NavLink></li>
+                            {this.props.language === "pl" ? <li><NavLink className='nav-link' exact to='/paulina' activeClassName='active'>O mnie</NavLink></li> : <li><NavLink className='nav-link' exact to='/paulina' activeClassName='active'>About Me</NavLink></li>}
+                            {this.props.language === "pl" ? <li><NavLink className='nav-link' exact to='/contact' activeClassName='active'>Kontakt</NavLink></li> : <li><NavLink className='nav-link' exact to='/contact' activeClassName='active'>Contact</NavLink></li>}
+                        </ul>
+                        <div className="flags">
+                            <div className="flag pl" onClick={this.props.polish}/>
+                            <div className="flag uk" onClick={this.props.english}/>
+                        </div>
+                    </div>
+                </header>
+            </div>
         )
     }
 }

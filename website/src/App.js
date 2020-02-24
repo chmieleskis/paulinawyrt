@@ -6,7 +6,10 @@ import Footer from "./components/footer";
 import Contact from "./components/contact";
 import ContactEn from "./components/contact-en";
 import GalleryLichoTwo from "./components/galleryLichoTwo";
+import GalleryOTOZ from "./components/galleryOTOZ";
 import GalleryEnglishWords from "./components/galleryEnglishWords";
+import GalleryLogrelet from "./components/galleryLogrelet";
+import GalleryCatsCity from "./components/galleryCatsCity";
 import {
     // withRouter,
     HashRouter,
@@ -15,6 +18,8 @@ import {
     // Switch,
     // NavLink
 } from 'react-router-dom'
+import GalleryRowFairyTales from "./components/galleryRowFairyTales";
+import GalleryWhatDogsDo from "./components/galleryWhatDogsDo";
 
 class App extends Component {
     state = {
@@ -46,24 +51,65 @@ class App extends Component {
         })
     };
 
+    handlePosters = () => {
+        this.setState({
+            category: 'posters'
+        })
+    };
+    handleBooklets = () => {
+        this.setState({
+            category: 'booklets'
+        })
+    };
+
+    handleFilms = () => {
+        this.setState({
+            category: 'films'
+        })
+    };
+
     render() {
         return (
             <>
                 <HashRouter>
-                    <Navigation polish={this.handlePolish} english={this.handleEnglish} language={this.state.language}/>
+                    <Navigation all={this.handleAll}
+                                polish={this.handlePolish}
+                                english={this.handleEnglish}
+                                language={this.state.language}/>
                     <Route exact path="/" render={(routeProps) => (<Portfolio {...routeProps}
                                                                               language={this.state.language}
                                                                               category={this.state.category}
                                                                               all={this.handleAll}
-                                                                              books={this.handleBooks}/>)}/>
+                                                                              books={this.handleBooks}
+                                                                              posters={this.handlePosters}
+                                                                              booklets={this.handleBooklets}
+                                                                              films={this.handleFilms}/>)}/>
                     <Route exact path="/paulina" render={(routeProps) => (<AboutMe {...routeProps} language={this.state.language}/>)}/>
                     {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
                     <Route exact path="/portfolio/gallery-licho-two" render={(routeProps) => (<GalleryLichoTwo {...routeProps}
                                                                                                                language={this.state.language}
                                                                                                                books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-OTOZ" render={(routeProps) => (<GalleryOTOZ {...routeProps}
+                                                                                                      language={this.state.language}
+                                                                                                      posters={this.handlePosters}
+                                                                                                      films={this.handleFilms}/>)}/>
+                    <Route exact path="/portfolio/gallery-what-dogs-do" render={(routeProps) => (<GalleryWhatDogsDo {...routeProps}
+                                                                                                               language={this.state.language}
+                                                                                                               books={this.handleBooks}/>)}/>
                     <Route exact path="/portfolio/gallery-english-words" render={(routeProps) => (<GalleryEnglishWords {...routeProps}
-                                                                                                                       language={this.state.language}
-                                                                                                                       books={this.handleBooks}/>)}/>
+                                                                                                                        language={this.state.language}
+                                                                                                                        books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-logrelet" render={(routeProps) => (<GalleryLogrelet {...routeProps}
+                                                                                                               language={this.state.language}
+                                                                                                               posters={this.handlePosters}
+                                                                                                               booklets={this.handleBooklets}/>)}/>
+                    <Route exact path="/portfolio/gallery-row-fairy-tales" render={(routeProps) => (<GalleryRowFairyTales {...routeProps}
+                                                                                                               language={this.state.language}
+                                                                                                               books={this.handleBooks}/>)}/>
+
+                    <Route exact path="/portfolio/gallery-cats-city" render={(routeProps) => (<GalleryCatsCity {...routeProps}
+                                                                                                                        language={this.state.language}
+                                                                                                                        posters={this.handlePosters}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>

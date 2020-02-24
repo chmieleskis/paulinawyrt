@@ -1,9 +1,10 @@
 .contact {
   width: 100vw;
-  height: calc(100vh - 25rem);
+  height: calc(100vh - 28rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15rem;
   .photo {
     width: 25%;
     height: 100%;
@@ -88,7 +89,7 @@
       font-family: $raleway;
       font-size: 1.6rem;
       font-weight: 600;
-      color: $color-input-background;
+      color: rgba(248, 246, 237, .9);
       outline: none;
       width: 40%;
       margin-top: 5rem;
