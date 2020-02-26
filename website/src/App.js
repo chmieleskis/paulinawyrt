@@ -5,11 +5,6 @@ import AboutMe from "./components/aboutMe";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
 import ContactEn from "./components/contact-en";
-import GalleryLichoTwo from "./components/galleryLichoTwo";
-import GalleryOTOZ from "./components/galleryOTOZ";
-import GalleryEnglishWords from "./components/galleryEnglishWords";
-import GalleryLogrelet from "./components/galleryLogrelet";
-import GalleryCatsCity from "./components/galleryCatsCity";
 import {
     // withRouter,
     HashRouter,
@@ -17,9 +12,19 @@ import {
     // Link,
     // Switch,
     // NavLink
-} from 'react-router-dom'
+} from 'react-router-dom';
+import GalleryLichoTwo from "./components/galleryLichoTwo";
+import GalleryOTOZ from "./components/galleryOTOZ";
+import GalleryEnglishWords from "./components/galleryEnglishWords";
+import GalleryLogrelet from "./components/galleryLogrelet";
+import GalleryCatsCity from "./components/galleryCatsCity";
+import GalleryThingStories from "./components/galleryThingStories";
+import GalleryThaddeus from "./components/galleryThaddeus";
 import GalleryRowFairyTales from "./components/galleryRowFairyTales";
 import GalleryWhatDogsDo from "./components/galleryWhatDogsDo";
+import GalleryLichoAndMystery from "./components/galleryLichoAndMystery";
+import GalleryRomeoJuliet from "./components/galleryRomeoJuliet";
+import GalleryKulturkaOne from "./components/galleryKulturkaOne";
 
 class App extends Component {
     state = {
@@ -110,6 +115,21 @@ class App extends Component {
                     <Route exact path="/portfolio/gallery-cats-city" render={(routeProps) => (<GalleryCatsCity {...routeProps}
                                                                                                                         language={this.state.language}
                                                                                                                         posters={this.handlePosters}/>)}/>
+                    <Route exact path="/portfolio/gallery-thing-stories" render={(routeProps) => (<GalleryThingStories {...routeProps}
+                                                                                                                          language={this.state.language}
+                                                                                                                          books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-thaddeus" render={(routeProps) => (<GalleryThaddeus {...routeProps}
+                                                                                                                       language={this.state.language}
+                                                                                                                       books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-licho-and-mystery" render={(routeProps) => (<GalleryLichoAndMystery {...routeProps}
+                                                                                                              language={this.state.language}
+                                                                                                              books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-romeo-juliet" render={(routeProps) => (<GalleryRomeoJuliet {...routeProps}
+                                                                                                                              language={this.state.language}
+                                                                                                                              books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-kulturka" render={(routeProps) => (<GalleryKulturkaOne {...routeProps}
+                                                                                                              language={this.state.language}
+                                                                                                              booklets={this.handleBooklets}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>

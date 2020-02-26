@@ -4,7 +4,9 @@ import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
 import poster from "../assets/Cats-city/poster.png";
+import frame from "../assets/Cats-city/frame.png";
 import poster2 from "../assets/Cats-city/poster2.png";
+import frameTwo from "../assets/Cats-city/frame2.png";
 
 const images = [
     {
@@ -13,9 +15,19 @@ const images = [
         width: 650
     },
     {
+        src: frame,
+        height: 920,
+        width: 885
+    },
+    {
         src: poster2,
         height: 920,
         width: 650
+    },
+    {
+        src: frameTwo,
+        height: 920,
+        width: 884
     },
 ];
 

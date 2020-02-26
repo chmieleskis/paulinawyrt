@@ -17,7 +17,7 @@
       color: $color-link;
       margin-top: 1.5rem;
       font-size: 1.6rem;
-      line-height: 2.1rem;
+      line-height: 2.3rem;
     }
     .title {
       font-family: $garamond;
@@ -36,6 +36,9 @@
         }
       }
     }
+    .description {
+      text-align: justify;
+    }
     //GalleryLichoTwo
     .ibby {
       @include award;
@@ -45,6 +48,11 @@
     .zabawkowicz {
       @include award;
       background-image: url("../../assets/English-words/zabawkowicz.jpg");
+    }
+    //GalleryLichoAndMystery
+    .ferdynand {
+      @include award;
+      background-image: url("../../assets/Licho1/ferd.png");
     }
   }
 }

@@ -80,7 +80,7 @@ class GalleryWhatDogsDo extends Component {
                     {this.props.language === 'pl' ? <p className="illustrations">Ilustracje: Paulina Wyrt</p> : <p className="illustrations">Illustrated by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Nasza Księgarnia<br/>seria Opowiem ci mamo</p> : <p className="publishing-house">Nasza Księgarnia Publishing House<br/>I Will Tell You, Mom series</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 20.06.2018</p> : <p className="premiere-date">Release date: 20.06.2018</p>}
-                    {this.props.language === 'pl' ? <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi culpa earum eveniet fugit magni maiores, perspiciatis quod repellendus vero?</p> : <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur at distinctio eum hic in ipsam reiciendis sapiente sint ullam.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae commodi culpa earum eveniet fugit magni maiores, perspiciatis quod repellendus vero?<br/>Wydanie zawiera okładkę i trzynaście dwustronnych ilustracji.</p> : <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur at distinctio eum hic in ipsam reiciendis sapiente sint ullam.<br/>Edition includes a colored cover and thirteen two-sided illustrations.</p>}
                 </div>
             </section>
         )

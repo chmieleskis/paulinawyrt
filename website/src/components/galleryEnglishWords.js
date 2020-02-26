@@ -96,7 +96,7 @@ class GalleryEnglishWords extends Component {
                     {this.props.language === 'pl' ? <p className="illustrations">Okładka i rozkładówka: Paulina Wyrt</p> : <p className="illustrations">Cover and centerfold by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Edgard<br/>seria Kapitan Nauka</p> : <p className="publishing-house">Edgard Publishing House<br/>Captain Science series</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 25.10.2017</p> : <p className="premiere-date">Release date: 25.10.2017</p>}
-                    {this.props.language === 'pl' ? <p className="description">Książka przeznaczona dla najmłodszych dzieci, łączy zabawę z nauką angielskich słówek. Zawiera zróżnicowane tematycznie rozkładówki, stworzone przez dwunastu artystów.</p> : <p className="description">The book is intended for the youngest children and combines fun with learning english words. Contains thematically diverse centerfolds created by twelve artists.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Książka przeznaczona dla najmłodszych dzieci, łączy zabawę z nauką angielskich słówek.<br/>Wydanie zawiera zróżnicowane tematycznie rozkładówki, stworzone przez dwunastu artystów.</p> : <p className="description">The book is intended for the youngest children and combines fun with learning english words.<br/>Edition contains thematically diverse centerfolds created by twelve artists.</p>}
                     {this.props.language === 'pl' ? <p className="award">Nagrody:</p> : <p className="awards">Awards:</p>}
                     <div className="zabawkowicz"/>
                 </div>
