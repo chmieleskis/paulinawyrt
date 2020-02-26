@@ -21,10 +21,14 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-logrelet'} className="miniature gallery-logrelet"><div className="mini-shade">{this.props.language === "pl" ? <p>Olbrzymek</p> : <p>L'ogrelet</p>}</div></Link>
                     <Link to={'/portfolio/gallery-row-fairy-tales'} className="miniature gallery-row-fairy-tales"><div className="mini-shade">{this.props.language === "pl" ? <p>Awantura w bajkach</p> : <p>Row in Fairy Tales</p>}</div></Link>
                     <Link to={'/portfolio/gallery-cats-city'} className="miniature gallery-cats-city"><div className="mini-shade">{this.props.language === "pl" ? <p>Miasto Kotów</p> : <p>City of Cats</p>}</div></Link>
-                    <Link to={'/portfolio/gallery-8'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 8</p> : <p>Title 8</p>}</div></Link>
-                    <Link to={'/portfolio/gallery-9'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 9</p> : <p>Title 9</p>}</div></Link>
-                    <Link to={'/portfolio/gallery-10'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 10</p> : <p>Title 10</p>}</div></Link>
-                    <Link to={'/portfolio/gallery-11'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 11</p> : <p>Title 11</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-thaddeus'} className="miniature gallery-thaddeus"><div className="mini-shade">{this.props.language === "pl" ? <p>Pan Tadeusz</p> : <p>Sir Thaddeus</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-thing-stories'} className="miniature gallery-thing-stories"><div className="mini-shade">{this.props.language === "pl" ? <p>Opowieści przedmiotów</p> : <p>Stories of objects</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-licho-and-mystery'} className="miniature gallery-licho-and-mystery"><div className="mini-shade">{this.props.language === "pl" ? <p>Małe Licho i tajemnica Niebożątka</p> : <p>Little Devil and the Mystery<br/>of Poor Thing</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-romeo-juliet'} className="miniature gallery-romeo-juliet"><div className="mini-shade">{this.props.language === "pl" ? <p>Romeo i Julia</p> : <p>Romeo and Juliet</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-kulturka'} className="miniature gallery-kulturka"><div className="mini-shade"><p>Kulturka</p></div></Link>
+                    <Link to={'/portfolio/gallery-12'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 12</p> : <p>Title 12</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-12'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 12</p> : <p>Title 12</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-12'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 12</p> : <p>Title 12</p>}</div></Link>
                     <Link to={'/portfolio/gallery-12'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 12</p> : <p>Title 12</p>}</div></Link>
                 </section>
             )
@@ -43,6 +47,10 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-what-dogs-do'} className="miniature gallery-what-dogs-do"><div className="mini-shade">{this.props.language === "pl" ? <p>Co robią psy</p> : <p>What dogs do</p>}</div></Link>
                     <Link to={'/portfolio/gallery-english-words'} className="miniature gallery-english-words"><div className="mini-shade">{this.props.language === "pl" ? <p>Na tropie angielskich słówek</p> : <p>On The Trail of English Words</p>}</div></Link>
                     <Link to={'/portfolio/gallery-row-fairy-tales'} className="miniature gallery-row-fairy-tales"><div className="mini-shade">{this.props.language === "pl" ? <p>Awantura w bajkach</p> : <p>Row in Fairy Tales</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-thaddeus'} className="miniature gallery-thaddeus"><div className="mini-shade">{this.props.language === "pl" ? <p>Pan Tadeusz</p> : <p>Sir Thaddeus</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-thing-stories'} className="miniature gallery-thing-stories"><div className="mini-shade">{this.props.language === "pl" ? <p>Opowieści przedmiotów</p> : <p>Stories of objects</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-licho-and-mystery'} className="miniature gallery-licho-and-mystery"><div className="mini-shade">{this.props.language === "pl" ? <p>Małe Licho i tajemnica Niebożątka</p> : <p>Little Devil and the Mystery<br/>of Poor Thing</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-romeo-juliet'} className="miniature gallery-romeo-juliet"><div className="mini-shade">{this.props.language === "pl" ? <p>Romeo i Julia</p> : <p>Romeo and Juliet</p>}</div></Link>
                 </section>
             )
         } else if (this.props.category === 'posters') {
@@ -87,6 +95,7 @@ class Portfolio extends Component {
                         {this.props.language === 'pl' ? <li>Własne projekty</li> : <li>Personal projects</li>}
                     </ul>
                     <Link to={'/portfolio/gallery-logrelet'} className="miniature gallery-logrelet"><div className="mini-shade">{this.props.language === "pl" ? <p>Olbrzymek</p> : <p>L'ogrelet</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-kulturka'} className="miniature gallery-kulturka"><div className="mini-shade"><p>Kulturka</p></div></Link>
                 </section>
             )
         }

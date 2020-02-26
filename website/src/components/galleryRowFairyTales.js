@@ -90,8 +90,8 @@ class GalleryRowFairyTales extends Component {
                     {this.props.language === 'pl' ? <p className="author">Autor: Agnieszka Olejnik</p> : <p className="author">Written by Agnieszka Olejnik</p>}
                     {this.props.language === 'pl' ? <p className="illustrations">Ilustracje: Paulina Wyrt</p> : <p className="illustrations">Illustrated by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Adamada</p> : <p className="publishing-house">Adamada Publishing House</p>}
-                    {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 2018</p> : <p className="premiere-date">Release date: 2018</p>}
-                    {this.props.language === 'pl' ? <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae consequatur cumque debitis dicta dolorem ducimus excepturi ipsa labore sed!</p> : <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur doloremque fugit iste nihil odio, repudiandae! At cum facilis qui?</p>}
+                    {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 13.09.2018</p> : <p className="premiere-date">Release date: 13.09.2018</p>}
+                    {this.props.language === 'pl' ? <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae consequatur cumque debitis dicta dolorem ducimus excepturi ipsa labore sed!<br/>Wydanie zawiera okłądkę i dwadzieścia jeden ilustracji.</p> : <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur doloremque fugit iste nihil odio, repudiandae! At cum facilis qui?<br/>Edition includes a colored cover and twenty-one illustrations.</p>}
                 </div>
             </section>
         )
