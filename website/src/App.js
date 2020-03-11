@@ -24,6 +24,7 @@ import GalleryRowFairyTales from "./components/galleryRowFairyTales";
 import GalleryWhatDogsDo from "./components/galleryWhatDogsDo";
 import GalleryLichoAndMystery from "./components/galleryLichoAndMystery";
 import GalleryRomeoJuliet from "./components/galleryRomeoJuliet";
+import GalleryKulturkaTwo from "./components/galleryKulturkaTwo";
 import GalleryKulturkaOne from "./components/galleryKulturkaOne";
 
 class App extends Component {
@@ -127,6 +128,9 @@ class App extends Component {
                     <Route exact path="/portfolio/gallery-romeo-juliet" render={(routeProps) => (<GalleryRomeoJuliet {...routeProps}
                                                                                                                               language={this.state.language}
                                                                                                                               books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-kulturka-two" render={(routeProps) => (<GalleryKulturkaTwo {...routeProps}
+                                                                                                                 language={this.state.language}
+                                                                                                                 booklets={this.handleBooklets}/>)}/>
                     <Route exact path="/portfolio/gallery-kulturka" render={(routeProps) => (<GalleryKulturkaOne {...routeProps}
                                                                                                               language={this.state.language}
                                                                                                               booklets={this.handleBooklets}/>)}/>

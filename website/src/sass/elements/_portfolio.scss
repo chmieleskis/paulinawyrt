@@ -1,108 +1,113 @@
-.portfolio {
-  width: 100vw;
-  min-height: calc(100vh - 25rem);
-  box-sizing: border-box;
-  padding: 1% 11.5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 15rem;
-  .categories {
+  .portfolio {
     width: 100%;
+    min-height: calc(100vh - 25rem);
+    box-sizing: border-box;
+    padding: 16.5rem 11.5%;
     display: flex;
-    justify-content: center;
-    margin: .5rem 0 1rem 0;
-    color: $color-link;
-    li {
-      font-size: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .categories {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: .5rem 0 1rem 0;
       color: $color-link;
-      margin-right: 2rem;
-      cursor: pointer;
-      &:hover {
+      li {
+        font-size: 1.5rem;
+        color: $color-link;
+        margin-right: 2rem;
+        cursor: pointer;
+        &:hover {
+          color: $color-email-hover;
+        };
+        &:last-of-type {
+          margin-right: 0;
+        };
+      };
+      .highlightened {
         color: $color-email-hover;
       };
     };
-    .highlightened {
-      color: $color-email-hover;
-    };
-  };
-  .miniature {
-    width: 23vw;
-    height: 33.5vh;
-    background-image: url("../../assets/magda.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 1rem 0 3rem 0;
-    cursor: pointer;
-    text-decoration: none;
-    .mini-shade {
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0);
-      display: flex;
-      align-items: center;
-      &:hover {
-        background-color: rgba(255, 255, 255, 0.5);
+    .miniature {
+      width: 23vw;
+      height: 33.5vh;
+      background-image: url("../../assets/magda.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 1rem 0 3rem 0;
+      cursor: pointer;
+      text-decoration: none;
+      .mini-shade {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+          p {
+            opacity: 1;
+          };
+        };
         p {
-          opacity: 1;
+          display: block;
+          width: 100%;
+          font-family: $garamond;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 2.5rem;
+          text-transform: uppercase;
+          color: rgba(69, 61, 60, 1);
+          opacity: 0;
+          text-align: center;
+
         };
       };
-      p {
-        display: block;
-        width: 100%;
-        font-family: $garamond;
-        font-size: 2rem;
-        font-weight: 700;
-        line-height: 2.5rem;
-        text-transform: uppercase;
-        color: rgba(69, 61, 60, 1);
-        opacity: 0;
-        text-align: center;
-
-      };
+    };
+    .gallery-licho-two {
+      background-image: url("../../assets/Licho/cover.png");
+    }
+    .gallery-english-words {
+      background-image: url("../../assets/English-words/cover.png");
+    };
+    .gallery-cats-city {
+      background-image: url("../../assets/Cats-city/cover.png");
+    };
+    .gallery-OTOZ {
+      background-image: url("../../assets/Otoz/cover.png");
+      background-size: contain;
+      background-position: center;
+    };
+    .gallery-logrelet {
+      background-image: url("../../assets/Olbrzymek/cover.png");
+    };
+    .gallery-row-fairy-tales {
+      background-image: url("../../assets/Row-in-fairytales/cover.png");
+    };
+    .gallery-what-dogs-do {
+      background-image: url("../../assets/WhatDogsDo/cover.png")
+    };
+    .gallery-thing-stories {
+      background-image: url("../../assets/Thing-stories/cover.png")
+    };
+    .gallery-thaddeus {
+      background-image: url("../../assets/Thaddeus/cover.png");
+      background-size: contain;
+      background-position: center;
+    };
+    .gallery-licho-and-mystery {
+      background-image: url("../../assets/Licho1/cover.png");
+    };
+    .gallery-romeo-juliet {
+      background-image: url("../../assets/RomeoAndJuliet/cover.png");
+    };
+    .gallery-kulturka-two {
+      background-image: url("../../assets/Kulturka3/cover.png");
+    };
+    .gallery-kulturka {
+      background-image: url("../../assets/Kulturka1/cover.png");
+      background-size: contain;
+      background-position: center;
     };
   };
-  .gallery-licho-two {
-    background-image: url("../../assets/Licho/cover.png");
-  }
-  .gallery-english-words {
-    background-image: url("../../assets/English-words/cover.png");
-  };
-  .gallery-cats-city {
-    background-image: url("../../assets/Cats-city/cover.png");
-  };
-  .gallery-OTOZ {
-    background-image: url("../../assets/Otoz/cover.png");
-    background-size: contain;
-    background-position: center;
-  };
-  .gallery-logrelet {
-    background-image: url("../../assets/Olbrzymek/cover.png");
-  };
-  .gallery-row-fairy-tales {
-    background-image: url("../../assets/Row-in-fairytales/cover.png");
-  };
-  .gallery-what-dogs-do {
-    background-image: url("../../assets/WhatDogsDo/cover.png")
-  };
-  .gallery-thing-stories {
-    background-image: url("../../assets/Thing-stories/cover.png")
-  };
-  .gallery-thaddeus {
-    background-image: url("../../assets/Thaddeus/cover.png");
-    background-size: contain;
-    background-position: center;
-  };
-  .gallery-licho-and-mystery {
-    background-image: url("../../assets/Licho1/cover.png");
-  };
-  .gallery-romeo-juliet {
-    background-image: url("../../assets/RomeoAndJuliet/cover.png");
-  };
-  .gallery-kulturka {
-    background-image: url("../../assets/Kulturka1/cover.png");
-    background-size: contain;
-    background-position: center;
-  };
-}
 

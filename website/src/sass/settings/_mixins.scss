@@ -14,6 +14,9 @@
   &:focus {
     border: 0.5px solid $color-link;
   };
+  @media screen and (max-width: 1000px) {
+    background-color: rgba(248, 246, 237, 0.7)
+  }
 };
 
 @mixin tooltip {

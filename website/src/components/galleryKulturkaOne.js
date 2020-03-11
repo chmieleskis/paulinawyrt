@@ -61,10 +61,10 @@ class GalleryKulturkaOne extends Component {
             <section className="image-gallery">
                 <Kulturka/>
                 <div className="gallery-descriptions">
-                    {this.props.language === 'pl' ? <p className='title'>Olbrzymek</p> : <p className='title'>L'ogrelet</p>}
+                    {this.props.language === 'pl' ? <p className='title'>Kulturka</p> : <p className='title'>Culture</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.booklets} to={'/'}>broszury</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.booklets} to={'/'}>booklets</Link></p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: listopad 2014</p> : <p className="premiere-date">Release date: november 2014</p>}
-                    {this.props.language === 'pl' ? <p className="description">Plakat oraz program teatralny do sztuki "Olbrzymek" Suzanne Lebeau w reżyserii Jerzego Moszkowicza. Spektakl powstał we współpracy Centrum Sztuki Dziecka i Teatru Nowego w Poznaniu.</p> : <p className="description">Poster and theater program for the play "L'ogrelet" by Suzanne Lebeau, directed by Jerzy Moszkowicz. The performance was created in cooperation with the Children's Art Center and Nowy Theater in Poznań.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Ilustrowany program dla organizacji <a className='kulturka-link' target="_blank" rel="noopener noreferrer" href="https://www.kulturka-poznan.pl">Kulturka</a> wydana w formie kolorowej książeczki...</p> : <p className="description">Lorem ipsum <a className='kulturka-link' target="_blank" rel="noopener noreferrer" href="https://www.kulturka-poznan.pl">Kulturka</a> dolor sit amet.</p>}
                 </div>
             </section>
         )
