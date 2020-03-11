@@ -90,7 +90,7 @@ class GalleryLichoAndMystery extends Component {
             <section className="image-gallery gallery-licho">
                 <LichoAndMystery/>
                 <div className="gallery-descriptions">
-                    {this.props.language === 'pl' ? <p className='title'>Małe Licho i tajemnica Niebożątka</p> : <p className='title'>Little Devil and the Mystery of Bożek</p>}
+                    {this.props.language === 'pl' ? <p className='title'>Małe Licho i tajemnica Niebożątka</p> : <p className='title'>Little Devil and the Mystery of Poor Thing</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.books} to={'/'}>książki</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.books} to={'/'}>books</Link></p>}
                     {this.props.language === 'pl' ? <p className="author">Autor: Marta Kisiel</p> : <p className="author">Written by Marta Kisiel</p>}
                     {this.props.language === 'pl' ? <p className="illustrations">Ilustracje: Paulina Wyrt</p> : <p className="illustrations">Illustrated by Paulina Wyrt</p>}
@@ -100,7 +100,7 @@ class GalleryLichoAndMystery extends Component {
                     {this.props.language === 'pl' ? <p className="award">Nagrody:</p> : <p className="awards">Awards:</p>}
                     <div className="ferdynand"/>
                 </div>
-            </section>
+                            </section>
         )
     }
 }
