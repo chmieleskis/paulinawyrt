@@ -3,15 +3,15 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import bookletCover from "../assets/Kulturka3/bookletCover.png";
-import banjo from "../assets/Kulturka3/banjo.png";
-import circus from "../assets/Kulturka3/circus.png";
-import flute from "../assets/Kulturka3/flute.png";
-import music from "../assets/Kulturka3/music.png";
-import theater from "../assets/Kulturka3/theater.png";
-import trumpet from "../assets/Kulturka3/trumpet.png";
-import house from "../assets/Kulturka3/house1.png";
-import houseTwo from "../assets/Kulturka3/house2.png";
+import bookletCover from "../assets/Kulturka3/bookletCover.webp";
+import banjo from "../assets/Kulturka3/banjo.webp";
+import circus from "../assets/Kulturka3/circus.webp";
+import flute from "../assets/Kulturka3/flute.webp";
+import music from "../assets/Kulturka3/music.webp";
+import theater from "../assets/Kulturka3/theater.webp";
+import trumpet from "../assets/Kulturka3/trumpet.webp";
+import house from "../assets/Kulturka3/house1.webp";
+import houseTwo from "../assets/Kulturka3/house2.webp";
 
 const images = [
     {

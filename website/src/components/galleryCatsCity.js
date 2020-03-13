@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import poster from "../assets/Cats-city/poster.png";
-import frame from "../assets/Cats-city/frame.png";
-import poster2 from "../assets/Cats-city/poster2.png";
-import frameTwo from "../assets/Cats-city/frame2.png";
+import poster from "../assets/Cats-city/poster.webp";
+import frame from "../assets/Cats-city/frame.webp";
+import poster2 from "../assets/Cats-city/poster2.webp";
+import frameTwo from "../assets/Cats-city/frame2.webp";
 
 const images = [
     {

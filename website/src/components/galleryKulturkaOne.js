@@ -3,8 +3,8 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import kulturka from "../assets/Kulturka1/kulturka.png";
-import car from "../assets/Kulturka1/car.png";
+import kulturka from "../assets/Kulturka1/kulturka.webp";
+import car from "../assets/Kulturka1/car.webp";
 
 
 const images = [

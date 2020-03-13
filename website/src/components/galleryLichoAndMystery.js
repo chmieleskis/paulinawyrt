@@ -3,13 +3,13 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import bookCover from "../assets/Licho1/bookCover.png";
-import house from "../assets/Licho1/house.png";
-import workshop from "../assets/Licho1/workshop.png";
-import bath from "../assets/Licho1/bath.png";
-import readingBook from "../assets/Licho1/readingBook.png";
-import halloweenBall from "../assets/Licho1/halloweenBall.png";
-import walkingSchool from "../assets/Licho1/walkingSchool.png";
+import bookCover from "../assets/Licho1/bookCover.webp";
+import house from "../assets/Licho1/house.webp";
+import workshop from "../assets/Licho1/workshop.webp";
+import bath from "../assets/Licho1/bath.webp";
+import readingBook from "../assets/Licho1/readingBook.webp";
+import halloweenBall from "../assets/Licho1/halloweenBall.webp";
+import walkingSchool from "../assets/Licho1/walkingSchool.webp";
 
 const images = [
     {

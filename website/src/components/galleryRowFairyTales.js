@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import bookCover from "../assets/Row-in-fairytales/bookCover.png";
-import soldiers from "../assets/Row-in-fairytales/soldiers.png";
-import spider from "../assets/Row-in-fairytales/spider.png";
-import runField from "../assets/Row-in-fairytales/runField.png";
-import dragonShadow from "../assets/Row-in-fairytales/dragonShadow.png";
-import journeySpider from "../assets/Row-in-fairytales/journeySpider.png";
+import bookCover from "../assets/Row-in-fairytales/bookCover.webp";
+import soldiers from "../assets/Row-in-fairytales/soldiers.webp";
+import spider from "../assets/Row-in-fairytales/spider.webp";
+import runField from "../assets/Row-in-fairytales/runField.webp";
+import dragonShadow from "../assets/Row-in-fairytales/dragonShadow.webp";
+import journeySpider from "../assets/Row-in-fairytales/journeySpider.webp";
 
 
 const images = [
