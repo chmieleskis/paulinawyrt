@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import logretet from "../assets/Olbrzymek/Logrelet.png";
-import program from "../assets/Olbrzymek/program.png";
-import programTwo from "../assets/Olbrzymek/program2.png";
-import detail from "../assets/Olbrzymek/detail.png";
-import poster from "../assets/Olbrzymek/poster.png";
+import logretet from "../assets/Olbrzymek/Logrelet.webp";
+import program from "../assets/Olbrzymek/program.webp";
+import programTwo from "../assets/Olbrzymek/program2.webp";
+import detail from "../assets/Olbrzymek/detail.webp";
+import poster from "../assets/Olbrzymek/poster.webp";
 
 const images = [
     {

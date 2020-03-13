@@ -3,13 +3,13 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import bookCover from "../assets/English-words/book-cover.png";
-import centerfold from "../assets/English-words/centerfold.png";
-import centerfoldWords from "../assets/English-words/centerfold-words.png";
-import detail1 from "../assets/English-words/detail1.png";
-import detail2 from "../assets/English-words/detail2.png";
-import detail3 from "../assets/English-words/detail3.png";
-import detail4 from "../assets/English-words/detail4.png";
+import bookCover from "../assets/English-words/book-cover.webp";
+import centerfold from "../assets/English-words/centerfold.webp";
+import centerfoldWords from "../assets/English-words/centerfold-words.webp";
+import detail1 from "../assets/English-words/detail1.webp";
+import detail2 from "../assets/English-words/detail2.webp";
+import detail3 from "../assets/English-words/detail3.webp";
+import detail4 from "../assets/English-words/detail4.webp";
 
 const images = [
     {

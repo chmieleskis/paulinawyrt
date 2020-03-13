@@ -2,22 +2,22 @@
   margin-top: 15rem;
   width: 100%;
   display: flex;
-  justify-content: center;
   .gallery-images {
     width: 25%;
-    margin-top: 3rem;
+    margin: 3rem 0 0 25%;
     img {
       cursor: pointer;
     }
   }
   .gallery-descriptions {
     width: 20%;
-    margin: 1.5rem 0 0 3rem;
+    margin: 1.5rem 0 0 55%;
+    position: fixed;
     p {
       color: $color-link;
       margin-top: 1.5rem;
-      font-size: 1.6rem;
-      line-height: 2.3rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
     .title {
       font-family: $garamond;
@@ -42,17 +42,17 @@
     //GalleryLichoTwo
     .ibby {
       @include award;
-      background-image: url("../../assets/Licho/IBBY.jpg");
+      background-image: url("../../assets/Licho/IBBY.webp");
     }
     //GalleryEnglishWords
     .zabawkowicz {
       @include award;
-      background-image: url("../../assets/English-words/zabawkowicz.jpg");
+      background-image: url("../../assets/English-words/zabawkowicz.webp");
     }
     //GalleryLichoAndMystery
     .ferdynand {
       @include award;
-      background-image: url("../../assets/Licho1/ferd.png");
+      background-image: url("../../assets/Licho1/ferd.webp");
     }
   }
 }

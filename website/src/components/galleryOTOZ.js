@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import robot from "../assets/Otoz/robot_m.png";
+import robot from "../assets/Otoz/robot_m.webp";
 import beach from "../assets/Otoz/plaza.gif";
-import plane from "../assets/Otoz/samolot_m.png";
-import stroller from "../assets/Otoz/wozek_m.png";
+import plane from "../assets/Otoz/samolot_m.webp";
+import stroller from "../assets/Otoz/wozek_m.webp";
 import motorcycle from "../assets/Otoz/motor.gif";
 
 const images = [

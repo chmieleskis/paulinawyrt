@@ -3,13 +3,13 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import bookCover from "../assets/Licho/book-cover.png";
+import bookCover from "../assets/Licho/book-cover.webp";
 import bookCoverGif from "../assets/Licho/book-cover.gif";
-import onTheRoad from "../assets/Licho/onTheRoad.png";
-import auntOda from "../assets/Licho/auntOda.png";
+import onTheRoad from "../assets/Licho/onTheRoad.webp";
+import auntOda from "../assets/Licho/auntOda.webp";
 import auntOdaGif from "../assets/Licho/auntOda.gif";
-import bozek from "../assets/Licho/bozek.png";
-import odaChopsWood from "../assets/Licho/odaChopsWood.png";
+import bozek from "../assets/Licho/bozek.webp";
+import odaChopsWood from "../assets/Licho/odaChopsWood.webp";
 
 const images = [
     {

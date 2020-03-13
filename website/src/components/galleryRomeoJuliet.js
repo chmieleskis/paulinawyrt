@@ -3,18 +3,18 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import covers from "../assets/RomeoAndJuliet/covers.png";
-import books from "../assets/RomeoAndJuliet/books.png";
-import titlePages from "../assets/RomeoAndJuliet/titlePages.png";
-import hands from "../assets/RomeoAndJuliet/hands.png";
-import romeoJuliet from "../assets/RomeoAndJuliet/romeoJuliet.png";
-import bookHands from "../assets/RomeoAndJuliet/booksHands.png";
-import romeo from "../assets/RomeoAndJuliet/romeo.png";
-import julietPoison from "../assets/RomeoAndJuliet/julietPoison.png";
-import swords from "../assets/RomeoAndJuliet/swords.png";
-import julietMask from "../assets/RomeoAndJuliet/julietMask.png";
-import romeoJulietSuicide from "../assets/RomeoAndJuliet/romeoJulieSuicide.png";
-import dagger from "../assets/RomeoAndJuliet/dagger.png";
+import covers from "../assets/RomeoAndJuliet/covers.webp";
+import books from "../assets/RomeoAndJuliet/books.webp";
+import titlePages from "../assets/RomeoAndJuliet/titlePages.webp";
+import hands from "../assets/RomeoAndJuliet/hands.webp";
+import romeoJuliet from "../assets/RomeoAndJuliet/romeoJuliet.webp";
+import bookHands from "../assets/RomeoAndJuliet/booksHands.webp";
+import romeo from "../assets/RomeoAndJuliet/romeo.webp";
+import julietPoison from "../assets/RomeoAndJuliet/julietPoison.webp";
+import swords from "../assets/RomeoAndJuliet/swords.webp";
+import julietMask from "../assets/RomeoAndJuliet/julietMask.webp";
+import romeoJulietSuicide from "../assets/RomeoAndJuliet/romeoJulieSuicide.webp";
+import dagger from "../assets/RomeoAndJuliet/dagger.webp";
 
 
 const images = [

@@ -3,13 +3,19 @@ import {Link} from "react-router-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, {Modal, ModalGateway} from "react-images";
 
-import balcony from "../assets/WhatDogsDo/balcony.png";
-import restaurant from "../assets/WhatDogsDo/restaurant.png";
-import town from "../assets/WhatDogsDo/town.png";
-import beautySalon from "../assets/WhatDogsDo/beautySalon.png";
+import bookCover from "../assets/WhatDogsDo/bookCover.webp";
+import balcony from "../assets/WhatDogsDo/balcony.webp";
+import restaurant from "../assets/WhatDogsDo/restaurant.webp";
+import town from "../assets/WhatDogsDo/town.webp";
+import beautySalon from "../assets/WhatDogsDo/beautySalon.webp";
 
 
 const images = [
+    {
+        src: bookCover,
+        height: 920,
+        width: 698
+    },
     {
         src: balcony,
         height: 920,
