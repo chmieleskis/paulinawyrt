@@ -13,6 +13,7 @@ import {
     // Switch,
     // NavLink
 } from 'react-router-dom';
+
 import GalleryLichoTwo from "./components/galleryLichoTwo";
 import GalleryOTOZ from "./components/galleryOTOZ";
 import GalleryEnglishWords from "./components/galleryEnglishWords";
@@ -24,8 +25,11 @@ import GalleryRowFairyTales from "./components/galleryRowFairyTales";
 import GalleryWhatDogsDo from "./components/galleryWhatDogsDo";
 import GalleryLichoAndMystery from "./components/galleryLichoAndMystery";
 import GalleryRomeoJuliet from "./components/galleryRomeoJuliet";
+import GalleryTaintedBird from "./components/galleryTaintedBird";
 import GalleryKulturkaTwo from "./components/galleryKulturkaTwo";
+import GalleryFloatingIsland from "./components/galleryFloatingIsland";
 import GalleryKulturkaOne from "./components/galleryKulturkaOne";
+import GalleryKulturkaThree from "./components/kulturkaThree";
 
 class App extends Component {
     state = {
@@ -128,12 +132,23 @@ class App extends Component {
                     <Route exact path="/portfolio/gallery-romeo-juliet" render={(routeProps) => (<GalleryRomeoJuliet {...routeProps}
                                                                                                                               language={this.state.language}
                                                                                                                               books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-tainted-bird" render={(routeProps) => (<GalleryTaintedBird {...routeProps}
+                                                                                                      language={this.state.language}
+                                                                                                      posters={this.handlePosters}
+                                                                                                      films={this.handleFilms}/>)}/>
                     <Route exact path="/portfolio/gallery-kulturka-two" render={(routeProps) => (<GalleryKulturkaTwo {...routeProps}
                                                                                                                  language={this.state.language}
                                                                                                                  booklets={this.handleBooklets}/>)}/>
+                    <Route exact path="/portfolio/gallery-floating-islands" render={(routeProps) => (<GalleryFloatingIsland {...routeProps}
+                                                                                                                     language={this.state.language}
+                                                                                                                     posters={this.handlePosters}
+                                                                                                                     films={this.handleFilms}/>)}/>
                     <Route exact path="/portfolio/gallery-kulturka" render={(routeProps) => (<GalleryKulturkaOne {...routeProps}
                                                                                                               language={this.state.language}
                                                                                                               booklets={this.handleBooklets}/>)}/>
+                    <Route exact path="/portfolio/gallery-kulturka-three" render={(routeProps) => (<GalleryKulturkaThree {...routeProps}
+                                                                                                                     language={this.state.language}
+                                                                                                                     booklets={this.handleBooklets}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>

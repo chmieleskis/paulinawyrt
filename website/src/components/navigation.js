@@ -9,7 +9,7 @@ class Navigation extends Component {
                 <header>
                     <div className='left-container'>
                         <HashLink className='logo' to='/#portfolio' onClick={this.props.all}>Paulina<br/>Wyrt</HashLink>
-                        <div className="animation-motorbike"/>
+                        <div className="animation-motorbike"><HashLink className='animation-motorbike-link' to='/#portfolio' onClick={this.props.all}/></div>
                     </div>
                     <div className="right-container">
                         <ul className='main-navigation'>
