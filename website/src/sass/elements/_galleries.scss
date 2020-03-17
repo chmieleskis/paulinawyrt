@@ -2,9 +2,24 @@
   margin-top: 15rem;
   width: 100%;
   display: flex;
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  };
   .gallery-images {
     width: 25%;
     margin: 3rem 0 0 25%;
+    @media screen and (max-width: 1200px) {
+      margin: 3rem 0 0 15%;
+      width: 35%;
+    };
+    @media screen and (max-width: 900px) {
+      margin: 3rem 0 0 0;
+      width: 50%;
+    };
+    @media screen and (max-width: 700px) {
+      width: 70%;
+    };
     img {
       cursor: pointer;
     }
@@ -13,6 +28,18 @@
     width: 20%;
     margin: 1.5rem 0 0 55%;
     position: fixed;
+    @media screen and (max-width: 1200px) {
+      width: 30%;
+      margin: 1.5rem 0 0 55%;
+    };
+    @media screen and (max-width: 900px) {
+      position: initial;
+      width: 50%;
+      margin: 1.5rem 0 0 0;
+    };
+    @media screen and (max-width: 700px) {
+      width: 70%;
+    };
     p {
       color: $color-link;
       margin-top: 1.5rem;
@@ -60,4 +87,11 @@
 .kulturka-link {
   color: $color-email-hover;
   text-decoration: none;
+}
+
+.racoon {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../assets/Circus/sloth.gif");
+  background-position: center;
 }
