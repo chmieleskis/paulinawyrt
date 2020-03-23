@@ -30,6 +30,7 @@ import GalleryKulturkaTwo from "./components/galleryKulturkaTwo";
 import GalleryFloatingIsland from "./components/galleryFloatingIsland";
 import GalleryKulturkaOne from "./components/galleryKulturkaOne";
 import GalleryKulturkaThree from "./components/kulturkaThree";
+import GalleryEzop from "./components/galleryEzop";
 
 class App extends Component {
     state = {
@@ -78,6 +79,12 @@ class App extends Component {
         })
     };
 
+    handleOther = () => {
+        this.setState({
+            category: 'other'
+        })
+    };
+
     render() {
         return (
             <>
@@ -93,7 +100,8 @@ class App extends Component {
                                                                               books={this.handleBooks}
                                                                               posters={this.handlePosters}
                                                                               booklets={this.handleBooklets}
-                                                                              films={this.handleFilms}/>)}/>
+                                                                              films={this.handleFilms}
+                                                                              other={this.handleOther}/>)}/>
                     <Route exact path="/paulina" render={(routeProps) => (<AboutMe {...routeProps} language={this.state.language}/>)}/>
                     {this.state.language === 'pl' ? <Route exact path="/contact" component={Contact}/> : <Route exact path="/contact" component={ContactEn}/>}
                     <Route exact path="/portfolio/gallery-licho-two" render={(routeProps) => (<GalleryLichoTwo {...routeProps}
@@ -102,7 +110,8 @@ class App extends Component {
                     <Route exact path="/portfolio/gallery-OTOZ" render={(routeProps) => (<GalleryOTOZ {...routeProps}
                                                                                                       language={this.state.language}
                                                                                                       posters={this.handlePosters}
-                                                                                                      films={this.handleFilms}/>)}/>
+                                                                                                      films={this.handleFilms}
+                                                                                                      other={this.handleOther}/>)}/>
                     <Route exact path="/portfolio/gallery-what-dogs-do" render={(routeProps) => (<GalleryWhatDogsDo {...routeProps}
                                                                                                                language={this.state.language}
                                                                                                                books={this.handleBooks}/>)}/>
@@ -149,6 +158,9 @@ class App extends Component {
                     <Route exact path="/portfolio/gallery-kulturka-three" render={(routeProps) => (<GalleryKulturkaThree {...routeProps}
                                                                                                                      language={this.state.language}
                                                                                                                      booklets={this.handleBooklets}/>)}/>
+                    <Route exact path="/portfolio/gallery-ezop" render={(routeProps) => (<GalleryEzop {...routeProps}
+                                                                                                                     language={this.state.language}
+                                                                                                                     books={this.handleBooks}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>

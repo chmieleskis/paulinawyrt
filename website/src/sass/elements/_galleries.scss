@@ -8,7 +8,7 @@
   };
   .gallery-images {
     width: 25%;
-    margin: 3rem 0 0 25%;
+    margin: 2rem 0 0 25%;
     @media screen and (max-width: 1200px) {
       margin: 3rem 0 0 15%;
       width: 35%;
@@ -42,10 +42,9 @@
     };
     p {
       color: $color-link;
-      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
       font-size: 1.5rem;
-      line-height: 2rem;
-    }
+      line-height: 2rem;    }
     .title {
       font-family: $garamond;
       font-size: 2.2rem;
@@ -64,7 +63,12 @@
       }
     }
     .description {
+      text-indent: 1.5rem;
       text-align: justify;
+      margin-bottom: 0;
+    };
+    .award {
+      margin-top: 1.5rem;
     }
     //GalleryLichoTwo
     .ibby {
@@ -93,5 +97,12 @@
   width: 100%;
   height: 30rem;
   background-image: url("../../assets/Circus/sloth.gif");
+  background-position: center;
+}
+
+.face {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../../assets/Otoz/face.webp");
   background-position: center;
 }

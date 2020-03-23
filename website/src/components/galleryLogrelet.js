@@ -80,8 +80,10 @@ class GalleryLogrelet extends Component {
                 <div className="gallery-descriptions">
                     {this.props.language === 'pl' ? <p className='title'>Olbrzymek</p> : <p className='title'>L'ogrelet</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.posters} to={'/'}>plakaty, </Link><Link className='category-link' onClick={this.props.booklets} to={'/'}>broszury</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.posters} to={'/'}>posters, </Link><Link className='category-link' onClick={this.props.booklets} to={'/'}>booklets</Link></p>}
+                    {this.props.language === 'pl' ? <p className="illustrations">Opracowanie graficzne: Paulina Wyrt</p> : <p className="illustrations">Graphic design by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: listopad 2014</p> : <p className="premiere-date">Release date: november 2014</p>}
-                    {this.props.language === 'pl' ? <p className="description">Plakat oraz program teatralny do sztuki "Olbrzymek" Suzanne Lebeau w reżyserii Jerzego Moszkowicza. Spektakl powstał we współpracy Centrum Sztuki Dziecka i Teatru Nowego w Poznaniu.</p> : <p className="description">Poster and theater program for the play "L'ogrelet" by Suzanne Lebeau, directed by Jerzy Moszkowicz. The performance was created in cooperation with the Children's Art Center and Nowy Theater in Poznań.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Plakat oraz program teatralny do sztuki "Olbrzymek" Suzanne Lebeau w reżyserii Jerzego Moszkowicza.</p> : <p className="description">Poster and theater program for the play "L'ogrelet" by Suzanne Lebeau, directed by Jerzy Moszkowicz.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Spektakl powstał we współpracy Centrum Sztuki Dziecka i Teatru Nowego w Poznaniu.</p> : <p className="description">The performance was created in cooperation with the Children's Art Center and Nowy Theater in Poznań.</p>}
                 </div>
             </section>
         )
