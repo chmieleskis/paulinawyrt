@@ -1,8 +1,8 @@
   .portfolio {
     width: 100%;
-    min-height: calc(100vh - 25rem);
     box-sizing: border-box;
-    padding: 16.5rem 8.5%;
+    min-height: calc(100vh - 13rem);
+    padding: 16.5rem 8.5% 0 8.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,6 +120,9 @@
     }
     .gallery-kulturka-three {
       background-image: url("../../assets/Kulturka2017/cover.webp");
+    }
+    .gallery-ezop {
+      background-image: url("../../assets/Ezop/cover.webp");
     }
   };
 

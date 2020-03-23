@@ -91,7 +91,9 @@ class GalleryRowFairyTales extends Component {
                     {this.props.language === 'pl' ? <p className="illustrations">Ilustracje: Paulina Wyrt</p> : <p className="illustrations">Illustrated by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Adamada</p> : <p className="publishing-house">Adamada Publishing House</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 13.09.2018</p> : <p className="premiere-date">Release date: 13.09.2018</p>}
-                    {this.props.language === 'pl' ? <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur beatae consequatur cumque debitis dicta dolorem ducimus excepturi ipsa labore sed!<br/>Wydanie zawiera okłądkę i dwadzieścia jeden ilustracji.</p> : <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur doloremque fugit iste nihil odio, repudiandae! At cum facilis qui?<br/>Edition includes a colored cover and twenty-one illustrations.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Ten dzień zaczął się inaczej. Czerwonemu Kapturkowi zapodział się gdzieś kapturek, a Rybak wrócił z połowu bez Złotej Rybki. Jednak nie to było najgorsze – na spokojnej dotąd Wyspie Bajek pojawili się porywacze.</p> : <p className="description">This day started differently. Red Riding Hood lost somewhere her hood and Fisherman came back from fishing without the Gold Fish. However, this was not the worst - hijackers appeared on the fairy-tale Island.</p>}
+                    {this.props.language === 'pl' ? <p className="description">Słowem, szykuje się niezła awantura!</p> : <p className="description">In a word, it's going to be a great a row!</p>}
+                    {this.props.language === 'pl' ? <p className="description">Wydanie zawiera okładkę i dwadzieścia jeden ilustracji.</p> : <p className="description">Edition includes a colored cover and twenty-one illustrations.</p>}
                 </div>
             </section>
         )

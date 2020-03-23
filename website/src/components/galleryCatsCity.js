@@ -74,6 +74,7 @@ class GalleryCatsCity extends Component {
                 <div className="gallery-descriptions">
                     {this.props.language === 'pl' ? <p className='title'>Miasto kotów</p> : <p className='title'>City of Cats</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.posters} to={'/'}>plakaty</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.posters} to={'/'}>posters</Link></p>}
+                    {this.props.language === 'pl' ? <p className="illustrations">Opracowanie graficzne: Paulina Wyrt</p> : <p className="illustrations">Graphic design by Paulina Wyrt</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: sierpień 2016</p> : <p className="premiere-date">Release date: august 2016</p>}
                     {this.props.language === 'pl' ? <p className="description">Dwa plakaty zaprojektowane dla fundacji "Miasto kotów", na potrzeby kampanii promującej adopcje zwierzaków.</p> : <p className="description">Two posters designed for the "Miasto kotów" foundation (City of Cats Foundation) for the needs of the campaign promoting animal adoption.</p>}
                 </div>

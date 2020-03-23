@@ -108,10 +108,11 @@ class GalleryKulturkaThree extends Component {
             <section className="image-gallery">
                 <Kulturka/>
                 <div className="gallery-descriptions">
-                    {this.props.language === 'pl' ? <p className='title'>Kulturka</p> : <p className='title'>Culture</p>}
+                    {this.props.language === 'pl' ? <p className='title'>Kulturka: repertuar 2017/2018</p> : <p className='title'>Kulturka: repertoire 2017/2018</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.booklets} to={'/'}>broszury</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.booklets} to={'/'}>booklets</Link></p>}
-                    {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: listopad 2014</p> : <p className="premiere-date">Release date: november 2014</p>}
-                    {this.props.language === 'pl' ? <p className="description">Ilustrowany program dla organizacji <a className='kulturka-link' target="_blank" rel="noopener noreferrer" href="https://www.kulturka-poznan.pl">Kulturka</a> wydana w formie kolorowej książeczki...</p> : <p className="description">Lorem ipsum <a className='kulturka-link' target="_blank" rel="noopener noreferrer" href="https://www.kulturka-poznan.pl">Kulturka</a> dolor sit amet.</p>}
+                    {this.props.language === 'pl' ? <p className="illustrations">Opracowanie graficzne: Paulina Wyrt</p> : <p className="illustrations">Graphic design by Paulina Wyrt</p>}
+                    {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: listopad 2017</p> : <p className="premiere-date">Release date: november 2017</p>}
+                    {this.props.language === 'pl' ? <p className="description">Ilustrowany repertuar dla organizacji <a className='kulturka-link' target="_blank" rel="noopener noreferrer" href="https://www.kulturka-poznan.pl">Kulturka</a> zajmującej się edukacją kulturalną dzieci i młodzieży, wydany w formie kolorowej książeczki.</p> : <p className="description">Illustrated repertoire for the <a className='kulturka-link' target="_blank" rel="noopener noreferrer" href="https://www.kulturka-poznan.pl">Kulturka</a>  organization, dealing with the cultural education of children and youth, published in the form of a colorful booklet.</p>}
                 </div>
             </section>
         )
