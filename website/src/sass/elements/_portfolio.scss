@@ -1,20 +1,24 @@
   .portfolio {
     width: 100%;
     box-sizing: border-box;
-    min-height: calc(100vh - 13rem);
-    padding: 16.5rem 8.5% 0 8.5%;
+    min-height: calc(100vh - 15rem);
+    padding: 15rem 8.5% 0 8.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     @media screen and  (max-width: 1600px) {
-      padding: 16.5rem 2%
+      padding: 16.5rem 2% 0 2%
     }
     .categories {
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       margin: .5rem 0 1rem 0;
       color: $color-link;
+      @media screen and  (max-width: 600px) {
+        margin: 1rem 7%;
+      }
       li {
         font-size: 1.5rem;
         color: $color-link;
@@ -26,6 +30,9 @@
         &:last-of-type {
           margin-right: 0;
         };
+        @media screen and  (max-width: 600px) {
+          margin: 1rem;
+        }
       };
       .highlightened {
         color: $color-email-hover;
@@ -34,7 +41,6 @@
     .miniature {
       width: 39.65rem;
       height: 29.25rem;
-      background-image: url("../../assets/magda.jpeg");
       background-size: cover;
       background-repeat: no-repeat;
       margin: 1rem 2rem 2rem 2rem;
@@ -120,6 +126,9 @@
     }
     .gallery-kulturka-three {
       background-image: url("../../assets/Kulturka2017/cover.webp");
+    }
+    .gallery-fury {
+      background-image: url("../../assets/Fury/cover.webp");
     }
     .gallery-ezop {
       background-image: url("../../assets/Ezop/cover.webp");

@@ -30,9 +30,9 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-kulturka'} className="miniature gallery-kulturka"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2014/2015</p> : <p>Kulturka<br/>repertoire 2014/2015</p>}</div></Link>
                     <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands / Circus in the Sky</p></div></Link>
                     <Link to={'/portfolio/gallery-kulturka-three'} className="miniature gallery-kulturka-three"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2017/2018</p> : <p>Kulturka<br/>repertoire 2017/2018</p>}</div></Link>
-                    <Link to={'/portfolio/gallery-12'} className="miniature"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-fury'} className="miniature gallery-fury"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
                     <Link to={'/portfolio/gallery-ezop'} className="miniature gallery-ezop"><div className="mini-shade">{this.props.language === "pl" ? <p>Bajki Ezopa</p> : <p>Aesop's Fairy Tales</p>}</div></Link>
-                    </section>
+                </section>
             )
         } else if (this.props.category === 'books') {
             return (
@@ -87,6 +87,7 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-OTOZ'} className="miniature gallery-OTOZ"><div className="mini-shade"><p>OTOZ "Animals"</p></div></Link>
                     <Link to={'/portfolio/gallery-tainted-bird'} className="miniature gallery-tainted-bird"><div className="mini-shade">{this.props.language === "pl" ? <p>Ptaszysko</p> : <p>Tainted Bird</p>}</div></Link>
                     <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands / Circus in the Sky</p></div></Link>
+                    <Link to={'/portfolio/gallery-fury'} className="miniature gallery-fury"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
                 </section>
             )
         } else if (this.props.category === 'booklets') {

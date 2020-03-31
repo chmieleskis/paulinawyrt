@@ -14,6 +14,7 @@
     "nodemailer": "^6.4.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hamburger-menu": "^1.1.1",
     "react-images": "^1.1.0-beta.3",
     "react-photo-gallery": "^8.0.0",
     "react-player": "^1.15.2",
