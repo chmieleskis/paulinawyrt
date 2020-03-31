@@ -15,18 +15,15 @@ class Footer extends Component {
                     <a target="_blank" rel="noopener noreferrer" href="https://www.behance.net/PaulinaWyrt" className="icon behance-icon"><i className="fab fa-behance-square"/></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/paulinawyrt" className="icon vimeo-icon"><i className="fab fa-vimeo"/></a>
                 </div>
-                {this.props.language === "pl" ? <span className="created-by">stronę wykonał:&nbsp;
+                {this.props.language === "pl" ?
                     <div className="email-address"
-                         onClick={this.handleCopy}>m.chmielewski@tut.by
+                         onClick={this.handleCopy}>stronę wykonał: m.chmielewski@tut.by
                          <span className="tooltip tooltip">Kliknij aby skopiować</span>
-                    </div>
-                </span>
-                : <span className="created-by">website created by:&nbsp;
+                    </div> :
                     <div className="email-address"
-                         onClick={this.handleCopy}>m.chmielewski@tut.by
+                         onClick={this.handleCopy}>website created by: m.chmielewski@tut.by
                          <span className="tooltip tooltip">Click to copy</span>
-                    </div>
-                </span>}
+                    </div>}
             </footer>
         )
     }

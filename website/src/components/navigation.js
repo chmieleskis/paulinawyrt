@@ -1,8 +1,10 @@
 import React, {Component} from "react";
-import {NavLink} from "react-router-dom";
 import {HashLink} from 'react-router-hash-link';
+import HamburgerMenu from 'react-hamburger-menu';
+import NavigationMenu from "./navigationMenu";
 
 class Navigation extends Component {
+
     render() {
         return (
             <div className="fixed">
@@ -12,11 +14,20 @@ class Navigation extends Component {
                         <div className="animation-motorbike"><HashLink className='animation-motorbike-link' to='/#portfolio' onClick={this.props.all}/></div>
                     </div>
                     <div className="right-container">
-                        <ul className='main-navigation'>
-                            <li><HashLink className='nav-link' to='/#portfolio' activeClassName='active' onClick={this.props.all}>Portfolio</HashLink></li>
-                            {this.props.language === "pl" ? <li><NavLink className='nav-link' exact to='/paulina' activeClassName='active'>O mnie</NavLink></li> : <li><NavLink className='nav-link' exact to='/paulina' activeClassName='active'>About Me</NavLink></li>}
-                            {this.props.language === "pl" ? <li><NavLink className='nav-link' exact to='/contact' activeClassName='active'>Kontakt</NavLink></li> : <li><NavLink className='nav-link' exact to='/contact' activeClassName='active'>Contact</NavLink></li>}
-                        </ul>
+                        <NavigationMenu open={this.props.isOpen} language={this.props.language}/>
+                        <div className="hamburger">
+                            <HamburgerMenu
+                                onClick={this.props.openMenu}
+                                isOpen={this.props.isOpen}
+                                menuClicked={this.props.openMenu.bind(this)}
+                                color='rgba(150, 217, 161, 1)'
+                                width={38}
+                                height={22}
+                                strokeWidth={5}
+                                borderRadius={15}
+                                animationDuration={.5}
+                            />
+                        </div>
                         <div className="flags">
                             <div className="flag pl" onClick={this.props.polish}/>
                             <div className="flag uk" onClick={this.props.english}/>

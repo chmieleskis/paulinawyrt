@@ -1,5 +1,5 @@
 .image-gallery {
-  margin-top: 15rem;
+  padding-top: 15rem;
   width: 100%;
   display: flex;
   @media screen and (max-width: 900px) {
@@ -91,6 +91,9 @@
 .kulturka-link {
   color: $color-email-hover;
   text-decoration: none;
+  &:hover {
+    color: $color-link;
+  }
 }
 
 .racoon {

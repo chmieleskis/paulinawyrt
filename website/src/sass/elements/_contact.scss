@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15rem;
+  padding-top: 15rem;
   .photo {
     width: 25%;
     height: 100%;
@@ -36,7 +36,7 @@
     .contact-text {
       font-family: $garamond;
       font-size: 1.8rem;
-      font-weight: 600;
+      font-weight: 400;
       text-align: center;
       line-height: 2.2rem;
       color: $color-link;
