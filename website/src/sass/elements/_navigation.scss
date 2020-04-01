@@ -26,6 +26,9 @@
       width: 70%;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 900px) {
+        width: 70%;
+      }
       .logo {
         margin-left: 10rem;
         font-family: $beth-ellen;
@@ -58,7 +61,7 @@
           height: 120%;
           width: 60%;
         };
-        @media screen and (max-width: 650px) {
+        @media screen and (max-width: 600px) {
           display: none;
         };
         .animation-motorbike-link {
@@ -75,6 +78,9 @@
       margin-right: 10rem;
       width: 60%;
       position: relative;
+      @media screen and (max-width: 900px) {
+        width: 30%;
+      }
       @media screen and (max-width: 550px) {
         margin-right: 7rem;
       }
