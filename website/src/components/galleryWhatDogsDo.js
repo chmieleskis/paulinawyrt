@@ -5,9 +5,21 @@ import Carousel, {Modal, ModalGateway} from "react-images";
 
 import bookCover from "../assets/WhatDogsDo/bookCover.webp";
 import balcony from "../assets/WhatDogsDo/balcony.webp";
+import suitecasePacking from "../assets/WhatDogsDo/suitcasePacking.webp";
 import restaurant from "../assets/WhatDogsDo/restaurant.webp";
+import birds from "../assets/WhatDogsDo/birds.webp";
+import rainingMan from "../assets/WhatDogsDo/rainingMan.webp";
+import lilasHouse from "../assets/WhatDogsDo/lilasHouse.webp";
+import lilasHouseInteriors from "../assets/WhatDogsDo/lilasHouseInteriors.webp";
+import game from "../assets/WhatDogsDo/game.webp";
 import town from "../assets/WhatDogsDo/town.webp";
+import similarities from "../assets/WhatDogsDo/similarities.webp";
+import foodLabirynth from "../assets/WhatDogsDo/foodLabiryth.webp";
 import beautySalon from "../assets/WhatDogsDo/beautySalon.webp";
+import beforeChristmas from "../assets/WhatDogsDo/beforeChristmas.webp";
+import christmasTree from "../assets/WhatDogsDo/manWithChristmasTree.webp";
+import lady from "../assets/WhatDogsDo/ladyWithDogsSketch.webp";
+import lilaFeler from "../assets/WhatDogsDo/lilaFeler.webp";
 
 
 const images = [
@@ -22,7 +34,37 @@ const images = [
         width: 1317
     },
     {
+        src: suitecasePacking,
+        height: 920,
+        width: 1317
+    },
+    {
         src: restaurant,
+        height: 920,
+        width: 1317
+    },
+    {
+        src: birds,
+        height: 920,
+        width: 883
+    },
+    {
+        src: rainingMan,
+        height: 920,
+        width: 985
+    },
+    {
+        src: lilasHouse,
+        height: 920,
+        width: 1198
+    },
+    {
+        src: lilasHouseInteriors,
+        height: 920,
+        width: 1317
+    },
+    {
+        src: game,
         height: 920,
         width: 1317
     },
@@ -32,15 +74,44 @@ const images = [
         width: 1317
     },
     {
+        src: similarities,
+        height: 920,
+        width: 1317
+    },
+    {
+        src: foodLabirynth,
+        height: 920,
+        width: 1317
+    },
+    {
         src: beautySalon,
         height: 920,
         width: 1317
     },
-
+    {
+        src: beforeChristmas,
+        height: 920,
+        width: 956
+    },
+    {
+        src: christmasTree,
+        height: 920,
+        width: 1306
+    },
+    {
+        src: lady,
+        height: 920,
+        width: 785
+    },
+    {
+        src: lilaFeler,
+        height: 920,
+        width: 910
+    },
 ];
 
 function WhatDogsDo() {
-    const openLightbox = useCallback((event, {photo, index}) => {
+    const openLightbox = useCallback((event, {index}) => {
         setCurrentImage(index);
         setViewerIsOpen(true);
     }, []);
@@ -72,7 +143,7 @@ function WhatDogsDo() {
             </ModalGateway>
         </div>
     )
-};
+}
 
 class GalleryWhatDogsDo extends Component {
     render() {

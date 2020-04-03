@@ -80,7 +80,7 @@ class GalleryFury extends Component {
             <section className="image-gallery">
                 <Fury/>
                 <div className="gallery-descriptions">
-                    {this.props.language === 'pl' ? <p className='title'>Ptaszysko</p> : <p className='title'>Tainted Bird</p>}
+                    {this.props.language === 'pl' ? <p className='title'>Furia</p> : <p className='title'>Fury</p>}
                     {this.props.language === 'pl' ? <p className='category'>Kategoria: <Link className='category-link' onClick={this.props.films} to={'/'}>animacje</Link></p> : <p className='category'>Category: <Link className='category-link' onClick={this.props.films} to={'/'}> animated films</Link></p>}
                     {this.props.language === 'pl' ? <p className="illustrations">Realizacja filmu: Paulina Wyrt<br/>Muzyka i udźwiękowienie: Aleksandra Słyż</p> : <p className="illustrations">Realized by Paulina Wyrt<br/>Music and sound by Aleksandra Słyż</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 2016</p> : <p className="premiere-date">Release date: 2016</p>}
