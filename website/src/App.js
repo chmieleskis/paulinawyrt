@@ -33,6 +33,7 @@ import GalleryKulturkaOne from "./components/galleryKulturkaOne";
 import GalleryKulturkaThree from "./components/kulturkaThree";
 import GalleryFury from "./components/galleryFury";
 import GalleryEzop from "./components/galleryEzop";
+import GallerySynesthesis from './components/gallerySynesthesis'
 
 class App extends Component {
     constructor(props) {
@@ -187,6 +188,9 @@ class App extends Component {
                     <Route exact path="/portfolio/gallery-ezop" render={(routeProps) => (<GalleryEzop {...routeProps}
                                                                                                                      language={this.state.language}
                                                                                                                      books={this.handleBooks}/>)}/>
+                    <Route exact path="/portfolio/gallery-synesthesis" render={(routeProps) => (<GallerySynesthesis {...routeProps}
+                                                                                                                     language={this.state.language}
+                                                                                                                     other={this.handleOther}/>)}/>
                     <Footer language={this.state.language}/>
                 </HashRouter>
             </>

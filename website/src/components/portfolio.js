@@ -32,6 +32,7 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-kulturka-three'} className="miniature gallery-kulturka-three"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2017/2018</p> : <p>Kulturka<br/>repertoire 2017/2018</p>}</div></Link>
                     <Link to={'/portfolio/gallery-fury'} className="miniature gallery-fury"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
                     <Link to={'/portfolio/gallery-ezop'} className="miniature gallery-ezop"><div className="mini-shade">{this.props.language === "pl" ? <p>Bajki Ezopa</p> : <p>Aesop's Fairy Tales</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-synesthesis'} className="miniature gallery-synesthesis"><div className="mini-shade">{this.props.language === "pl" ? <p>Synestezja 2</p> : <p>Synesthesia 2</p>}</div></Link>
                 </section>
             )
         } else if (this.props.category === 'books') {
@@ -120,6 +121,7 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-OTOZ'} className="miniature gallery-OTOZ"><div className="mini-shade">{this.props.language === "pl" ? <p>Znajdź swoją drugą połówkę</p> : <p>Find Your Soulmate</p>}</div></Link>
                     <Link to={'/portfolio/gallery-kulturka-two'} className="miniature gallery-kulturka-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 12</p> : <p>Title 12</p>}</div></Link>
                     <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands<br/>Circus in the Sky</p></div></Link>
+                    <Link to={'/portfolio/gallery-synesthesis'} className="miniature gallery-synesthesis"><div className="mini-shade">{this.props.language === "pl" ? <p>Synestezja 2</p> : <p>Synesthesia 2</p>}</div></Link>
                 </section>
             )
         }
