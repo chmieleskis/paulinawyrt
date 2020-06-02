@@ -6,7 +6,7 @@
   @media screen and (max-width: 900px) {
     flex-direction: column;
     align-items: center;
-  }
+  };
   .photo {
     width: 50rem;
     height: 50rem;
@@ -14,45 +14,53 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 6rem 5rem 0 0;
-    border: .5px solid $color-link;
+    margin: 2rem 5rem 0 0;
     border-radius: 50%;
     @media screen and (max-width: 1200px) {
       width: 35rem;
       height: 35rem;
       margin: 6rem 3rem 0 0;
-    }
+    };
     @media screen and (max-width: 900px) {
       margin: 6rem 0 0 0;
-    }
+    };
     @media screen and (max-width: 500px) {
       width: 25rem;
       height: 25rem;
-    }
+    };
   };
   .description {
     color: $color-link;
     width: 35%;
-    font-size: 2rem;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 6rem 0 3rem 0;
+    margin: 2rem 0 3rem 0;
     text-align: justify;
     @media screen and (max-width: 1200px) {
       width: 40%;
-    }
+    };
     @media screen and (max-width: 900px) {
       width: 75%;
-    }
+    };
     @media screen and (max-width: 500px) {
       width: 85%;
-    }
-    p {
-      margin-bottom: 1.5rem;
-      &:last-of-type {
-        margin-bottom: 0;
-      }
+    };
+    .publications {
+      br {
+        display: block;
+        margin: .7rem;
+        content: ""
+      };
+      i {
+        font-style: italic;
+      };
+    };
+    h3 {
+      font-weight: 600;
+      margin: 2rem 0 1rem 0;
     };
   };
 };

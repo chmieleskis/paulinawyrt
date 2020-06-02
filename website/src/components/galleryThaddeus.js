@@ -19,7 +19,10 @@ import detailsOne from "../assets/Thaddeus/details1.webp";
 import detailsTwo from "../assets/Thaddeus/details2.webp";
 import detailsThree from "../assets/Thaddeus/details3.webp";
 import detailsFour from "../assets/Thaddeus/details4.webp";
+<<<<<<< HEAD
 import flower from "../assets/Thaddeus/flower.webp";
+=======
+>>>>>>> 5aaa45053e94f2e89f4f2283cf1ec6d2410a6e4e
 import thaddeus from "../assets/Thaddeus/thaddeus.gif";
 
 const images = [
@@ -108,11 +111,14 @@ const images = [
         height: 920,
         width: 899
     },
+<<<<<<< HEAD
     {
         src: flower,
         height: 920,
         width: 2950
     },
+=======
+>>>>>>> 5aaa45053e94f2e89f4f2283cf1ec6d2410a6e4e
 ];
 
 function Thaddeus() {
@@ -163,6 +169,7 @@ class GalleryThaddeus extends Component {
                     {this.props.language === 'pl' ? <p className="publishing-house">Wydawnictwo Greg</p> : <p className="publishing-house">Greg Publishing House</p>}
                     {this.props.language === 'pl' ? <p className="premiere-date">Data premiery: 2017</p> : <p className="premiere-date">Release date: 2017</p>}
                     {this.props.language === 'pl' ? <p className="description">Polska epopeja narodowa ilustrowana klasycznymi rysunkami Michała Elwiro Andriollego, wydanymi po raz pierwszy w 1882 roku we Lwowie oraz uzupełniona ozdobnymi, głównie floralnymi, motywami w wykonaniu Pauliny Wyrt.</p> : <p className="description">Polish national epic illustrated with classical drawings by Michał Elwiro Andriolli, first published in 1882 in Lviv, and supplemented with decorative, mainly floral, motifs created by Paulina Wyrt.</p>}
+                    <div className='flower'/>
                 </div>
             </section>
         )

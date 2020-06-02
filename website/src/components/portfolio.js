@@ -14,10 +14,11 @@ class Portfolio extends Component {
                         {this.props.language === 'pl' ? <li onClick={this.props.films}>Animacje</li> : <li onClick={this.props.films}>Animated films</li>}
                         {this.props.language === 'pl' ? <li onClick={this.props.other}>Inne</li> : <li onClick={this.props.other}>Other</li>}
                     </ul>
-                    <Link to={'/portfolio/gallery-licho-two'} className="miniature gallery-licho-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Małe Licho i anioł z kamienia</p> : <p>Little Devil And The Stone Angel</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-licho-two'} className="miniature gallery-licho-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Małe Licho<br/>i anioł z kamienia</p> : <p>Little Devil<br/>and The Stone Angel</p>}</div></Link>
                     <Link to={'/portfolio/gallery-OTOZ'} className="miniature gallery-OTOZ"><div className="mini-shade">{this.props.language === "pl" ? <p>Znajdź swoją drugą połówkę</p> : <p>Find Your Soulmate</p>}</div></Link>
                     <Link to={'/portfolio/gallery-what-dogs-do'} className="miniature gallery-what-dogs-do"><div className="mini-shade">{this.props.language === "pl" ? <p>Co robią psy</p> : <p>What dogs do</p>}</div></Link>
-                    <Link to={'/portfolio/gallery-english-words'} className="miniature gallery-english-words"><div className="mini-shade">{this.props.language === "pl" ? <p>Na tropie angielskich słówek</p> : <p>On The Trail of English Words</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-english-words'} className="miniature gallery-english-words"><div className="mini-shade">{this.props.language === "pl" ? <p>Na tropie<br/>angielskich słówek</p> : <p>On The Trail<br/>of English Words</p>}</div></Link>
+
                     <Link to={'/portfolio/gallery-logrelet'} className="miniature gallery-logrelet"><div className="mini-shade">{this.props.language === "pl" ? <p>Olbrzymek</p> : <p>L'ogrelet</p>}</div></Link>
                     <Link to={'/portfolio/gallery-row-fairy-tales'} className="miniature gallery-row-fairy-tales"><div className="mini-shade">{this.props.language === "pl" ? <p>Awantura w bajkach</p> : <p>Row in Fairy Tales</p>}</div></Link>
                     <Link to={'/portfolio/gallery-cats-city'} className="miniature gallery-cats-city"><div className="mini-shade">{this.props.language === "pl" ? <p>Miasto Kotów</p> : <p>City of Cats</p>}</div></Link>
@@ -28,10 +29,18 @@ class Portfolio extends Component {
                     <Link to={'/portfolio/gallery-kulturka-two'} className="miniature gallery-kulturka-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2019/2020</p> : <p>Kulturka<br/>repertoire 2019/2020</p>}</div></Link>
                     <Link to={'/portfolio/gallery-tainted-bird'} className="miniature gallery-tainted-bird"><div className="mini-shade">{this.props.language === "pl" ? <p>Ptaszysko</p> : <p>Tainted Bird</p>}</div></Link>
                     <Link to={'/portfolio/gallery-kulturka'} className="miniature gallery-kulturka"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2014/2015</p> : <p>Kulturka<br/>repertoire 2014/2015</p>}</div></Link>
+<<<<<<< HEAD
                     <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands / Circus in the Sky</p></div></Link>
                     <Link to={'/portfolio/gallery-kulturka-three'} className="miniature gallery-kulturka-three"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2017/2018</p> : <p>Kulturka<br/>repertoire 2017/2018</p>}</div></Link>
                     <Link to={'/portfolio/gallery-fury'} className="miniature gallery-fury"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
                     <Link to={'/portfolio/gallery-ezop'} className="miniature gallery-ezop"><div className="mini-shade">{this.props.language === "pl" ? <p>Bajki Ezopa</p> : <p>Aesop's Fairy Tales</p>}</div></Link>
+=======
+                    <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands<br/>Circus in the Sky</p></div></Link>
+                    <Link to={'/portfolio/gallery-kulturka-three'} className="miniature gallery-kulturka-three"><div className="mini-shade">{this.props.language === "pl" ? <p>Kulturka<br/>repertuar 2017/2018</p> : <p>Kulturka<br/>repertoire 2017/2018</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-fury'} className="miniature gallery-fury"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-ezop'} className="miniature gallery-ezop"><div className="mini-shade">{this.props.language === "pl" ? <p>Bajki Ezopa</p> : <p>Aesop's Fairy Tales</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-synesthesis'} className="miniature gallery-synesthesis"><div className="mini-shade">{this.props.language === "pl" ? <p>Synestezja 2</p> : <p>Synesthesia 2</p>}</div></Link>
+>>>>>>> 5aaa45053e94f2e89f4f2283cf1ec6d2410a6e4e
                 </section>
             )
         } else if (this.props.category === 'books') {
@@ -45,9 +54,15 @@ class Portfolio extends Component {
                         {this.props.language === 'pl' ? <li onClick={this.props.films}>Animacje</li> : <li onClick={this.props.films}>Animated films</li>}
                         {this.props.language === 'pl' ? <li onClick={this.props.other}>Inne</li> : <li onClick={this.props.other}>Other</li>}
                     </ul>
+<<<<<<< HEAD
                     <Link to={'/portfolio/gallery-licho-two'} className="miniature gallery-licho-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Małe Licho i anioł z kamienia</p> : <p>Little Devil And The Stone Angel</p>}</div></Link>
                     <Link to={'/portfolio/gallery-what-dogs-do'} className="miniature gallery-what-dogs-do"><div className="mini-shade">{this.props.language === "pl" ? <p>Co robią psy</p> : <p>What dogs do</p>}</div></Link>
                     <Link to={'/portfolio/gallery-english-words'} className="miniature gallery-english-words"><div className="mini-shade">{this.props.language === "pl" ? <p>Na tropie angielskich słówek</p> : <p>On The Trail of English Words</p>}</div></Link>
+=======
+                    <Link to={'/portfolio/gallery-licho-two'} className="miniature gallery-licho-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Małe Licho<br/>i anioł z kamienia</p> : <p>Little Devil<br/>and The Stone Angel</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-what-dogs-do'} className="miniature gallery-what-dogs-do"><div className="mini-shade">{this.props.language === "pl" ? <p>Co robią psy</p> : <p>What dogs do</p>}</div></Link>
+                    <Link to={'/portfolio/gallery-english-words'} className="miniature gallery-english-words"><div className="mini-shade">{this.props.language === "pl" ? <p>Na tropie<br/>angielskich słówek</p> : <p>On The Trail<br/>of English Words</p>}</div></Link>
+>>>>>>> 5aaa45053e94f2e89f4f2283cf1ec6d2410a6e4e
                     <Link to={'/portfolio/gallery-row-fairy-tales'} className="miniature gallery-row-fairy-tales"><div className="mini-shade">{this.props.language === "pl" ? <p>Awantura w bajkach</p> : <p>Row in Fairy Tales</p>}</div></Link>
                     <Link to={'/portfolio/gallery-thaddeus'} className="miniature gallery-thaddeus"><div className="mini-shade">{this.props.language === "pl" ? <p>Pan Tadeusz</p> : <p>Sir Thaddeus</p>}</div></Link>
                     <Link to={'/portfolio/gallery-thing-stories'} className="miniature gallery-thing-stories"><div className="mini-shade">{this.props.language === "pl" ? <p>Opowieści przedmiotów</p> : <p>Stories of objects</p>}</div></Link>
@@ -86,7 +101,11 @@ class Portfolio extends Component {
                     </ul>
                     <Link to={'/portfolio/gallery-OTOZ'} className="miniature gallery-OTOZ"><div className="mini-shade"><p>OTOZ "Animals"</p></div></Link>
                     <Link to={'/portfolio/gallery-tainted-bird'} className="miniature gallery-tainted-bird"><div className="mini-shade">{this.props.language === "pl" ? <p>Ptaszysko</p> : <p>Tainted Bird</p>}</div></Link>
+<<<<<<< HEAD
                     <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands / Circus in the Sky</p></div></Link>
+=======
+                    <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands<br/>Circus in the Sky</p></div></Link>
+>>>>>>> 5aaa45053e94f2e89f4f2283cf1ec6d2410a6e4e
                     <Link to={'/portfolio/gallery-fury'} className="miniature gallery-fury"><div className="mini-shade">{this.props.language === "pl" ? <p>Furia</p> : <p>Fury</p>}</div></Link>
                 </section>
             )
@@ -119,7 +138,12 @@ class Portfolio extends Component {
                     </ul>
                     <Link to={'/portfolio/gallery-OTOZ'} className="miniature gallery-OTOZ"><div className="mini-shade">{this.props.language === "pl" ? <p>Znajdź swoją drugą połówkę</p> : <p>Find Your Soulmate</p>}</div></Link>
                     <Link to={'/portfolio/gallery-kulturka-two'} className="miniature gallery-kulturka-two"><div className="mini-shade">{this.props.language === "pl" ? <p>Tytuł 12</p> : <p>Title 12</p>}</div></Link>
+<<<<<<< HEAD
                     <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands / Circus in the Sky</p></div></Link>
+=======
+                    <Link to={'/portfolio/gallery-floating-islands'} className="miniature gallery-floating-islands"><div className="mini-shade"><p>Floating Islands<br/>Circus in the Sky</p></div></Link>
+                    <Link to={'/portfolio/gallery-synesthesis'} className="miniature gallery-synesthesis"><div className="mini-shade">{this.props.language === "pl" ? <p>Synestezja 2</p> : <p>Synesthesia 2</p>}</div></Link>
+>>>>>>> 5aaa45053e94f2e89f4f2283cf1ec6d2410a6e4e
                 </section>
             )
         }
